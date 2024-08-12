@@ -17,21 +17,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    z-index: 10;
-}
-
-.logo {
-    height: 10vh;
-    display: flex;
-    align-items: start;
-
 }
 
 .logo img {
     object-fit: cover;
     border-radius: 20px;
     height: 10vh;
-    width: 14vw;
+    width: 10vw;
 }
 
 .Option {
@@ -44,18 +36,14 @@ body {
     text-decoration-style: none;
     /* background-color: orange; */
     margin: 0px 10px;
-    padding: 0px 40px;
+    padding: 0px 20px;
     display: flex;
     justify-content: space-around;
 }
 
-#f {
+.function a {
     text-decoration: none;
-    background-color: rgb(235, 248, 248);
-    height: 35px;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
+    font-size: large;
 }
 
 .nav-button button {
@@ -63,27 +51,82 @@ body {
     color: rgb(142, 238, 238);
     text-align: center;
     font-size: larger;
-    height: 35px;
+    height: 40px;
     color: white;
-    background-color: rgb(160, 244, 235);
+    background-color: #3D7068;
+    ;
     border: 2px solid rgb(197, 243, 243);
     border-radius: 20px;
     padding: 5px 30px;
 }
 
-.content{
-    display: flex;
-    position: relative;
+.nav-button button:hover {
+    border-color:#3D7068;
 }
 
-#circle{
-    height: 80vh;
-    width: 40vw;
-    background-color: rgb(195, 236, 232);
-    border-radius: 50%;
+.content {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+}
+
+
+.box {
+    height: 70vh;
+    width: 33vw;
+    background-color: rgb(228, 244, 239);
+}
+
+
+
+
+
+
+
+
+
+
+
+.foot {
+    height: 40vh;
+    width: 100vw;
+    border-radius: 20px;
+    background-color: #3D7068;
+    position: relative;
+    bottom: 0px;
+}
+
+
+.text {
     position: absolute;
-    right: 0px;
-    top: -30px;
-    box-shadow: 5px ;
-    z-index: 0;
+    left: 0.5em;
+    height: 5em;
+    font-size: 4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+    color: white;
+}
+
+.image {
+    position: absolute; 
+    top: 1em;
+    right: 5em;
+    width: 20em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.image img {
+    height: 2.3em;
+    width: 2.3em;
+}
+
+.buttom {
+    width: 100%;    
+    height: 50%;
+    position: absolute;
+    bottom: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: orange; */
 }
