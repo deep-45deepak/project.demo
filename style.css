@@ -77,6 +77,18 @@ body {
     background-color: rgb(228, 244, 239);
 }
 
+.content{
+    height: auto;
+    width: auto;
+}
+
+.box{
+    height: 900px;
+    width: 900px;
+    background-color: white;
+}
+
+
 
 
 
@@ -88,7 +100,7 @@ body {
 
 
 .foot {
-    height: 40vh;
+    height: 50vh;
     width: 100vw;
     border-radius: 20px;
     background-color: #3D7068;

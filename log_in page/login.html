@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Log-In</title>
+    <link rel="stylesheet" href="log-in.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container1 logIn">
+            <div class="Social_Account">
+                <i class="fa-brands fa-google fa-xl" style="color: #0e6b5d;"></i>
+                <i class="fa-brands fa-instagram fa-xl" style="color: #0e6b5d;"></i>
+                <i class="fa-brands fa-facebook fa-xl" style="color: #0e6b5d;"></i>
+                <i class="fa-brands fa-linkedin fa-xl" style="color: #0e6b5d"></i>
+                <i class="fa-brands fa-square-x-twitter fa-xl" style="color: #0e6b5d"></i>
+            </div>
+            <h2>Log In</h2>
+            <form id="data1">
+                <input type="text" placeholder="Username" id="Username" />
+                <input type="email" placeholder="Email"  id="Email" />
+                <span class="eye-icon" onclick="togglePassword()"></span>
+
+                <input type="password" placeholder="Password" id="Password" />
+                <p id="Forget">Forget Your Password.?</p>
+                <p><button type="submit" id="login-btn">Log In</button></p>
+                <p id="btn">Don't have an account?<button id="log-in">Sign up</button></p>
+            </form>
+        </div>
+        <div class="form-container2 signIn">
+            <div class="Social_Account">
+                <i class="fa-brands fa-google fa-xl" style="color: #0e6b5d;"></i>
+                <i class="fa-brands fa-instagram fa-xl" style="color: #0e6b5d;"></i>
+                <i class="fa-brands fa-facebook fa-xl" style="color: #0e6b5d;"></i>
+                <i class="fa-brands fa-linkedin fa-xl" style="color: #0e6b5d;"></i>
+                <i class="fa-brands fa-square-x-twitter fa-xl" style="color: #0e6b5d;"></i>
+            </div>
+            <div class="signup-container">
+                <h2>Sign up</h2>
+                <form id="data2">
+                    <input type="text" placeholder="Username" id="username" />
+                    <input type="email" placeholder="Email" id="email" />
+                    <input type="password" placeholder="Password" id="password" />
+                    <button type="submit" id="sign-up-btn">Sign up</button>
+                </form>
+                <p>Already have an account? <button id="sign-in"> Log In</button></p>
+            </div>
+        </div>
+        <div id="design">
+            <span id="hello"> <i class="fa-solid fa-user fa-fade fa-2xl" style="color: #f5f5f7;"></i> Hello!
+                Friends.</span>
+            <p>register with personal details to use all of <br>this site features.</p>
+        </div>
+    </div>
+
+    </div>
+    <script src="log-in.js"></script>
+</body>
+
+</html>
