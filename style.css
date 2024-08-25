@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(235, 248, 248);
+    background-color: rgb(227, 245, 245);
 }
 
 #break {
@@ -17,6 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: transparent;
 }
 
 .logo img {
@@ -87,6 +88,23 @@ body {
     width: 900px;
     background-color: white;
 }
+
+.wallpaper{
+    height: 70vh;
+    width: 100vw;
+    background: skyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

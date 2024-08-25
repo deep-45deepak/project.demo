@@ -9,161 +9,140 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: #80a6a0;
+    background-color: #f4f5ff;
     font-family: Arial, sans-serif;
 }
 
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 60vw;
-    height: 70vh;
-    background-color: #f5f9f9;
-    border: 1.5px solid #272828;
-    border-radius: 4em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+@media only screen and (min-width: 767px) {
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60vw;
+        height: 80vh;
+        border-radius: 4em;
+        /* overflow: hidden; */
+    }
+
+    .form-container1 {
+        text-align: center;
+        width: 27em;
+        height: 25em;
+        padding: 3em 1em 6em 1em;
+        background-color: #f4f5ff;
+        border: 0.015em solid none;
+        border-radius: 3em;
+        box-shadow: 10px 10px 20px rgb(200, 229, 246),
+            -10px -10px 20px rgb(200, 229, 246);
+    }
+
+    .Social_Account {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2em 1em 2em 1em;
+    }
+
+    .form-container1 input {
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 2em;
+        font-weight: 200;
+        margin-top: 1em;
+        padding: 0.5em 5em 0.5em 1em;
+    }
+
+    .form-container1 form {
+        text-align: center;
+    }
+
+    .container p {
+        font-size: small;
+        line-height: 15px;
+        letter-spacing: 0.3px;
+        margin: 15px 0;
+    }
+
+    #login-btn {
+        border: none;
+        padding: 0.5em 1.5em;
+        border-radius: 5em;
+        background-color: black;
+        color: white;
+        font-size: large;
+    }
+
+    #change1 {
+        border: none;
+        color: blue;
+        background-color: white;
+    }
+
+    #log-in:active {
+        background-color: blue;
+        color: white;
+        font-weight: 200;
+    }
+
+    h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+    .form-container2 {
+        text-align: center;
+        width: 27em;
+        height: 25em;
+        padding: 3em 1em 6em 1em;
+        background-color: #f4f5ff;
+        border: 0.015em solid none;
+        border-radius: 3em;
+        box-shadow: 10px 10px 20px rgb(200, 229, 246),
+            -10px -10px 20px rgb(200, 229, 246);
+        display: none;
+        /* visibility: hidden; */
+    }
+
+    .form-container2 form {
+        text-align: center;
+    }
+
+    .form-container2 input {
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 2em;
+        font-weight: 200;
+        margin-top: 1em;
+        padding: 0.5em 5em 0.5em 1em;
+    }
+
+    #sign-up-btn {
+        border: none;
+        padding: 0.5em 1.5em;
+        border-radius: 5em;
+        background-color: black;
+        color: white;
+        font-size: large;
+    }
+
+    #change2 {
+        border: none;
+        color: blue;
+        background-color: white;
+    }
+
+    #sign-in:active {
+        background-color: blue;
+        color: white;
+        font-weight: 200;
+    }
 }
 
-.form-container1 {
-    width: 18em;
-    height: 22em;
-    padding: 2em;
-    background-color: #fff;
-    border: 0.015em solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #376961;
-    flex-shrink: 5fr;
+@media only screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+
 }
 
-.form-container1 input:focus{
-    background-color: #dbf8f5;
-}   
+@media only screen and (max-width: 479px) {
 
-#design {
-    width: 30em;
-    height: 30em;
-    border-radius: 5em;
-    background-color: rgb(30, 135, 112);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 1fr;
-    margin-right: -6em;
+
 }
-
-#design p {
-    color: white;
-    font-size: large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-#hello {
-    margin: 1em;
-    color: white;
-    font-size: x-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.Social_Account {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1.5em;
-}
-
-.form-container1 form {
-    margin: 0.4em;
-    text-align: center;
-}
-
-.form-container1 input {
-    margin-top: 0.4em;
-    padding: 0.4em 6em 0.4em 0.4em;
-}
-
-#login-btn {
-    border: none;
-    padding: 0.3em 1.3em;
-    border-radius: 5em;
-    background-color: #376961;
-    color: white;
-    font-size: large;
-}
-
-.container p {
-    font-size: small;
-    line-height: 15px;
-    letter-spacing: 0.3px;
-    margin: 15px 0;
-}
-
-h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    color: #3D7068;
-}
-
-.form-container2 {
-    width: 18em;
-    height: 22em;
-    padding: 2em;
-    background-color: #fff;
-    border: 0.015em solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #376961;
-    margin-left: 3em;
-    display: none;
-    /* visibility: hidden; */
-}
-
-.form-container2 input {
-    border: 0.1em solid darkcyan;
-    margin-top: 0.4em;
-    padding: 0.4em 6em 0.4em 0.4em;
-}
-
-.form-container2 input:focus{
-    background-color: #dbf8f5;
-}
-
-.form-container2 form {
-    margin: 1em;
-    text-align: center;
-}
-
-#sign-up-btn {
-    margin: 1em;
-    border: none;
-    padding: 0.3em 1.3em;
-    border-radius: 5em;
-    background-color: #376961;
-    color: white;
-    font-size: large;
-}
-
-#log-in {
-    border: none;
-    color: blue;
-    background-color: white;
-}
-
-#log-in:active {
-    background-color: blue;
-    color: white;
-    font-weight: 200;
-}
-
-#sign-in {
-    border: none;
-    color: blue;
-    background-color: white;
-}
-
-#sign-in:active {
-    background-color: blue;
-    color: white;
-    font-weight: 200;
-}
-

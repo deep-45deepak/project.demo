@@ -1,57 +1,64 @@
-const signIn = document.querySelector(".form-container2");
 const logIn = document.querySelector(".form-container1");
+const signIn = document.querySelector(".form-container2");
 
-const btn1 = document.getElementById('log-in');
-const btn2 = document.getElementById('sign-in');
+const btn1 = document.querySelector('#change1');
+const btn2 = document.querySelector('#change2');
 
-btn1.addEventListener("click",()=>{
-   logIn.style.display = 'none';
-   signIn.style.display = 'block';
-});
+		btn1.addEventListener("click",()=>{
+			signIn.style.display = 'block';
+			logIn.style.display = 'none';
+		});
+		btn2.addEventListener("click",()=>{
+			logIn.style.display = 'block';
+			signIn.style.display = 'none';
+		});
 
-btn2.addEventListener("click",()=>{
-    signIn.style.display = 'none';
-    logIn.style.display = 'block';
-});
-
-const login = document.getElementById('data1');
+const login = document.querySelector('.data1');
 		const loginData = {};
 
-		login.addEventListener('submit', (e) => {
+		login.addEventListener('click', (e) => {
 			e.preventDefault();
 			loginData.name = document.getElementById('Username').value;
 			loginData.email = document.getElementById('Email').value;
 			loginData.password = document.getElementById('Password').value;
 			console.log(loginData);
+			if (loginData.password=="password") {
+				window.open("../index.html");
+			}else if (loginData.name == ""){
+				const msg = document.querySelector("#loginMsg");
+				msg.textContent = "Enter correct username!!";
+				msg.style.color = "red";
+			}else if (loginData.email == ""){
+				const msg = document.querySelector("#loginMsg");
+				msg.textContent = "Enter correct Email!!";
+				msg.style.color = "red";
+			}else if (loginData.password == ""){
+				const msg = document.querySelector("#loginMsg");
+				msg.textContent = "Enter Correct Password!!";
+				msg.style.color = "red";
+			}else{
+				const msg = document.querySelector("#loginMsg");
+				msg.textContent = "Wrong Password.!!";
+				msg.style.color = "red";
+			}
 			// Send userData to server or store it in local storage
 	    });
+		
 
-const sign_in = document.getElementById('data2');
+const sign_in = document.querySelector('.data2');
 		const sign_inData = {};
-
-		sign_in.addEventListener('submit', (e) => {
+		sign_in.addEventListener('click', (e) => {
 			e.preventDefault();
 			sign_inData.name = document.getElementById('username').value;
 			sign_inData.email = document.getElementById('email').value;
 			sign_inData.password = document.getElementById('password').value;
 			console.log(sign_inData);
+			if (loginData.password=="password") {
+				window.location.href = "../index.html";
+			}else{
+				const msg = document.querySelector("#signupMsg");
+				msg.textContent = "Wrong Password.!!";
+				msg.style.color = "red";	
+			}
 			// Send userData to server or store it in local storage
 	    });
-
-// const serverData = new FormData(document.getElementById('data1'));
-// const fileForLog_in = new File(serverData, 'data.txt', 'text/plain');
-        
-// const user = new FileWriter(fileForLog_in);
-// writer.write(formData.get('inputData'));
-// writer.close();
-        
-
-// const serverNewData = new FormData(document.getElementById('data2'));
-// const fileForSign_in = new File(serverNewData, 'data.txt', 'text/plain');
-        
-// const writer = new FileWriter(fileForSign_in);
-// writer.write(formData.get('inputData'));
-// writer.close();
-        
-
-
