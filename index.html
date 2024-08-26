@@ -5,44 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
-        <div class="top_box">
-            <div class="logo">
-                <img src="Images/logo.png" alt="">
-            </div>
-            <div class="Option">
-                <div class="function"><a href="#"><i class="fa-solid fa-home fa-lg" style="color: #3D7068;"></i> &nbsp;
-                        Home</a></div>
-                <div class="function"><a href="https://www.forbesindia.com/blog/"> <i
-                            class="fa-sharp fa-solid fas fa-marker fa-lg" style="color: #3D7068;"></i> &nbsp;Blogs</a>
-                </div>
-                <div class="function"><a href="#"> <i class="fa-sharp fa-solid far fa-address-book fa-lg"
-                            style="color: #3D7068;"></i> &nbsp; About Us</a></div>
-                <div class="function"><a href="#"> <i class="fa-sharp fa-solid fa-phone fa-lg"
-                            style="color: #3D7068;"></i> &nbsp; Contact Us</a></div>
-            </div>
-            <div class="nav-button">
-                <button>Log-In</button>
-            </div>
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #3D7068;"></i>
-            </div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Images/logo.png" alt="">
+        </div>
+        <div class="top">
+           <div class="Home">
+            <button class="btn">Home</button>
+           </div>
+           <div class="Blogs">
+            <button class="btn">Blogs<select></select></button> 
+           </div>
+           <div class="About Us">
+            <button class="btn">About Us<select></select></button>
+           </div>
+           <div class="Contact Us">
+            <button class="btn">Contact Us<select></select></button> 
+           </div>
+        </div>  
+        <div class="account">
+            <button id="account">Account</button>&nbsp;
+            <i class="fa-regular fa-user fa-xl" style="color: rgb(4, 72, 95);"></i>
         </div>
     </nav>
-    <div class="wallpaper"></div>
-    <main class="content">
-        <div class="box">Deepak</div>
-        <div class="box">Deepak</div>
-        <div class="box">Deepak</div>
-        <div class="box">Deepak</div>
-    </main>
+    <main class="main">
+        <div class="second">
+            <div class="content">
+                <h1>Lorem ipsum dolor sit.</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis modi perferendis excepturi quam? Sed alias soluta voluptas, assumenda, fugiat non sequi, dolores harum excepturi culpa iure nesciunt voluptates? Voluptas, commodi.
+                </p>
+                <div class="wallpaper">
+                    <img src="Images/blogging-sites.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="first"></div>
+    </main> 
+           
+            
+
+
+
+
+
+
+
+
+<!--
     <footer>
         <div class="foot">
             <div class="text">
@@ -87,7 +101,8 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
+-->
     <script src="script.js"></script>
 </body>
 
