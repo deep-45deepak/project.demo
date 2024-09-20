@@ -1,64 +1,57 @@
-const logIn = document.querySelector(".form-container1");
-const signIn = document.querySelector(".form-container2");
+//  After log in open the main page of the website.
+const sPage = document.getElementById("continue1");
+sPage.addEventListener("click", (e) => {
+  e.preventDefault();
+  const person1 = {};
+  let new_user = document.getElementById("Username").value;
+  let new_email = document.getElementById('Email').value;
+  let new_password = document.getElementById('Password').value;
+  person1.username = new_user;
+  person1.email = new_email;
+  person1.password = new_password;
+  console.log(person1);
+  if (person1.username = new_user && person1.password == new_password && person1.email == new_email) {
+	// for new tab prefer this command.
+    // window.open("../index.html");
+	// for same page after log-in prefer the below command
+	window.location.href = '../index.html';
+  }
+});
 
-const btn1 = document.querySelector('#change1');
-const btn2 = document.querySelector('#change2');
 
-		btn1.addEventListener("click",()=>{
-			signIn.style.display = 'block';
-			logIn.style.display = 'none';
-		});
-		btn2.addEventListener("click",()=>{
-			logIn.style.display = 'block';
-			signIn.style.display = 'none';
-		});
+const lPage = document.getElementById("continue2");
+lPage.addEventListener("click", (e) => {
+  e.preventDefault();
+  const person2 = {};
+  person2.email = document.getElementById('Email2').value;
+  person2.password = document.getElementById('Password2').value;
+  console.log(person2);
+  if (person2.password == "password" && person2.email == "dpk.41deep@gmail.com") {
+	// for new tab prefer this command.
+    // window.open("../index.html");
+	// for same page after log-in prefer the below command
+	window.location.href = '../index.html';
+  } else if (person2.email == "") {
+    const msg = document.querySelector(".Msg2");
+    msg.style.color = "red";
+    msg.textContent = "Enter correct Email!!";
+  } else if (person2.password == "") {
+    const msg = document.querySelector(".Msg2");
+    msg.style.color = "red";
+    msg.textContent = "Enter Correct Password!!";
+  } else {
+    const msg = document.querySelector(".Msg2");
+    msg.style.color = "red";
+    msg.textContent = "Wrong Password.!!";
+  }
+});
 
-const login = document.querySelector('.data1');
-		const loginData = {};
 
-		login.addEventListener('click', (e) => {
-			e.preventDefault();
-			loginData.name = document.getElementById('Username').value;
-			loginData.email = document.getElementById('Email').value;
-			loginData.password = document.getElementById('Password').value;
-			console.log(loginData);
-			if (loginData.password=="password") {
-				window.open("../index.html");
-			}else if (loginData.name == ""){
-				const msg = document.querySelector("#loginMsg");
-				msg.textContent = "Enter correct username!!";
-				msg.style.color = "red";
-			}else if (loginData.email == ""){
-				const msg = document.querySelector("#loginMsg");
-				msg.textContent = "Enter correct Email!!";
-				msg.style.color = "red";
-			}else if (loginData.password == ""){
-				const msg = document.querySelector("#loginMsg");
-				msg.textContent = "Enter Correct Password!!";
-				msg.style.color = "red";
-			}else{
-				const msg = document.querySelector("#loginMsg");
-				msg.textContent = "Wrong Password.!!";
-				msg.style.color = "red";
-			}
-			// Send userData to server or store it in local storage
-	    });
-		
-
-const sign_in = document.querySelector('.data2');
-		const sign_inData = {};
-		sign_in.addEventListener('click', (e) => {
-			e.preventDefault();
-			sign_inData.name = document.getElementById('username').value;
-			sign_inData.email = document.getElementById('email').value;
-			sign_inData.password = document.getElementById('password').value;
-			console.log(sign_inData);
-			if (loginData.password=="password") {
-				window.location.href = "../index.html";
-			}else{
-				const msg = document.querySelector("#signupMsg");
-				msg.textContent = "Wrong Password.!!";
-				msg.style.color = "red";	
-			}
-			// Send userData to server or store it in local storage
-	    });
+// Open sign in page. and login page
+const signIn = document.querySelector(".signIn");
+const logIn = document.querySelector(".login");
+const btn1 = document.querySelector(".btn").addEventListener("click",(e) => {
+	e.preventDefault();
+	signIn.style.display = "none";
+	logIn.style.display = "block";
+});

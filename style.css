@@ -1,105 +1,429 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
 }
 
 body {
-    background-color: #f4f5ff;
+  background-color: ghostwhite;
 }
 
-
 @media only screen and (min-width: 750px) {
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        background-color: #f4f5ff;
-    }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: ghostwhite;
+    height: auto;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+  }
+  #break {
+    height: 1.5rem;
+    border: 1px solid darkgreen;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75vw;
+  }
+  .logo img {
+    height: 50px;
+    width: 5vw;
+    border-radius: 1em;
+    margin: 0.5em 5em 0em 2em;
 
-    .logo img {
-        object-fit: cover;
-        border-radius: 20px;
-        height: 10vh;
-        width: 10vw;
-    }
+  }
+  .heading {
+    width: 55vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .heading button {
+    border: none;
+    background-color: ghostwhite;
+    font-family: "lora";
+    font-size: medium;
+    padding: 0.3em 0.5em;
+    border-radius: 1em;
+    font-weight: 500;
+  }
+  .heading button:hover {
+    background-color: #04aa6d;
+    color: white;
+    cursor: pointer;
+  }
+  .Search {
+    border: 0.14em solid gray;
+    height: auto;
+    max-width: auto;
+    padding: 0em 0.5em 0em 0.6em;
+    border-radius: 1em;
+  }
+  .Search > input {
+    border: none;
+    font-family: lora;
+    background-color: ghostwhite;
+    font-size: medium;
+  }
+  .Search > input:focus {
+    outline: none;
+    border: none;
+  }
+  #effect:hover {
+    background-color: rgb(216, 215, 215);
+    padding: 0.3em;
+    border-radius: 50%;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25vw;
+  }
+  .right button {
+    border: none;
+    font-family: "lora";
+    font-size: medium;
+    background-color: #04aa6d;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    font-weight: 500;
+    cursor: pointer;
+  }
 
-    .top {
-        height: 7vh;
-        width: 40vw;
-        display: flex;
-        justify-content: space-evenly;
-    }
+  /* Main Starts from here */
+  .first {
+    margin-top: 3em;
+    width: 100vw;
+    height: auto;
+    background-color: #04aa6d;
+    padding-top: 2em;
+    text-align: center;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lora";
+  }
+  .text > h1 {
+    font-size: xxx-large;
+    color: white;
+    cursor: none;
+  }
+  .text > p {
+    cursor: none;
+    color: white;
+    font-size: medium;
+    margin: 1em;
+    min-width: 50vw;
+    max-width: 70vw;
+  }
+  .text > button {
+    font-size: larger;
+    margin: 0.5em;
+    padding: 0.4em 1em;
+    border: none;
+    border-radius: 1em;
+  }
+  .text p:hover,
+  .text h1:hover {
+    text-shadow: 5px 5px 15px white;
+  }
+  .text button:hover {
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  .second{
+    /* height: 65vh; */
+    width: 100vw;
+    text-align: center;
+    background-color: white;
+    color: black;
+  }
+  .secondtop{
+    height: 30vh;
+    width: 60vw;
+    background-color: white;
+    color: black;
+    text-align: center;
+    overflow:scroll;
+  }
+  .secondTop>h1{
+    font-size: xxx-large;
+    padding: 1em 0em 0.1em 0em;
+  }
+  .secondTop>h3{
+    font-size: large;
+    padding: 0.1em 0em 2em 0em;
+  }
+  .secondTop a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid gray;
+    background-color: rgb(209, 206, 206);
+    padding: 0.3em;
+    margin: 0.4em;
+    border-radius: 0.4em;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  
+}
+.box{
+    height: auto;
+    width: 20vw;
+    border: 0.001em solid gray;
+    margin: 2em;
+}
+.secondEnd{
+    height: 10vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#SecBtn{
+    border: none;
+    font-size: medium;
+    padding: 0.4em 1.5em;
+    color: white;
+    background-color: rgb(209, 206, 206);
+    border-radius: 0.5em;
+}
+/* third Section starts from here. */
+.third{
+  height: 55vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 4.5vw;
+  align-items:start;
+  background-image: url(/Images/section3.png);
+  background-size:cover;
+  color: white;
+}
+.thirdContent{
+  background-color: transparent;
+}
+.thirdContent>h1{
+  font-size:2.5em;
+}
 
-    .btn {
-        border: none;
-        background-color: #f4f5ff;
-        font-size: large;
-        border-radius: 1em;
-        padding: 0.4em 1em;
-    }
+  /* Footer starts from here.. */
+  .last {
+    width: 100vw;
+    height: auto;
+  }
+  .icons {
+    width: 100vw;
+    height: auto;
+    /* padding: 1em 0em 1em 0em; */
+    background-color: rgb(56, 56, 56);
+    border-bottom: 0.1em solid mintcream;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .icons i {
+    margin: 1em 2em;
+  }
+  .icons i:hover{
+    text-shadow: 10px 1px 10px white;
+  }
+  .info {
+    width: 100vw;
+    height: 80%;
+    background-color: rgb(56, 56, 56);
+    padding: 4em 0em;
+    display: flex;
+    justify-content: space-evenly;
+    border-left: 0.1em solid mintcream;
+    border-radius: 1em;
+}
+#glow:hover{
+  text-shadow: 1px 1px 10px white;
+}
+.Details {
+    color: ghostwhite;
+    width: 20vw;
+  }
+}
+.Details>img{
+  height: 4em;
+  width: 6em;
+  object-fit: contain;
+  border-radius: 2em;
+  /* mix-blend-mode: screen; */
+}
 
-    .btn:hover {
-        background-color: lightcyan;
-        border-radius: 1em;
-        padding: 0.4em 1em;
-    }
+@media only screen and (max-width: 769px) {
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: ghostwhite;
+    height: 2.5em;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+  }
+  #break {
+    display: none;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    margin: 0.4em 0.4em 0.2em 2em;
+  }
+  .logo img {
+    height: 25px;
+    width: 15vw;
+    border-radius: 1em;
+    margin: 0.5em 2em 0.5em 0.3em;
+  }
+  .heading>button{
+    display: none;
+  }
+  .Search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Search>input{
+    border: 0.12em solid gray;
+    height: 2em;
+    max-width: 8em;
+    padding: 0.5em;
+    border-radius: 1em;
+  }
+  .Search>button{
+    background-color: #04aa6d;
+    border-radius: 1em;
+    color: white;
+    border: none;
+    margin: 0.2em;
+    padding: 0.2em;
+  }
+  .Search>input:active {
+    border: none;
+    outline: none;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+    margin: 0.6em 0.4em 0.5em 2em;
+  }
+  .rightSecBtn {
+    border: none;
+    font-family: "lora";
+    font-size: medium;
+    background-color: #04aa6d;
+    color: white;
+    padding: 0.4em;
+    border-radius: 1em;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  /* first starts from here */
+  .first {
+    margin-top: 2.7em;
+    max-width: 100vw;
+    height: auto;
+    background-color: #04aa6d;
+    padding-top: 2em;
+    text-align: center;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lora";
+  }
+  .first img {
+    max-width: 80vw;
+  }
+  .text > h1 {
+    font-size: x-large;
+    color: white;
+    cursor: none;
+  }
+  .text > p {
+    display: none;
+  }
+  .text > button {
+    font-size: medium;
+    margin: 2em;
+    padding: 0.4em 1em;
+    border: none;
+    border-radius: 1em;
+  }
+  .text h1:hover {
+    text-shadow: 5px 5px 15px white;
+  }
+  .text button:hover {
+    border: 2px solid white;
+    cursor: pointer;
+  }
 
-    select {
-        border: none;
-        border-radius: 5px;
-        background-color: #f4f5ff;
-    }
-
-    #account {
-        border: none;
-        background-color: white;
-        font-size: large;
-        border-radius: 1em;
-        padding: 0.2em 1em;
-        border: 1px solid black;
-        background-color: rgb(186, 228, 243);
-    }
-
-    .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        height: auto;
-        width: auto;
-    }
-
-    .first {
-        height: 100vh;
-        width: 90vw;
-        background-image: url(Images/best-blogging-sites.jpg);
-        background-repeat: no-repeat;
-    }
-
-    .second {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        /* justify-content: space-around; */
-    }
-
-    .content {
-        height: 60vh;
-        width: 30vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 4em;
-        font-size: large;
-        font-family: "Poppins", sans-serif;
-        font-weight: 200;
-        font-style: normal;
-        border-radius: 5em;
-    }
-
-    .wallpaper img {
-        height: 60vh;
-        width: 70vw;
-        object-fit: contain;
-    }
+  /* Footer starts here */
+  .last {
+    width: 100vw;
+    height: auto;
+    margin: none;
+  }
+  .icons {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(56, 56, 56);
+    padding: 0.2em -1em;
+    border-bottom: 0.1em solid mintcream;
+    padding-bottom: 0.5em;
+  }
+  .icons i {
+    margin: 0.7em 0.9em 0em 0.9em;
+    height: 0.2em;
+    width: 0.2em;
+  }
+  .info {
+    width: 100vw;
+    height: 80%;
+    background-color: rgb(56, 56, 56);
+    padding: 1.5em 0em;
+    display: flex;
+    justify-content: space-evenly;
+    border-left: 0.1em solid mintcream;
+    border-radius: 1em solid white;
+}
+  .info h1 {
+    font-size: medium;
+  }
+  .info h3 {
+    font-size: xx-small;
+  }
+  .info p {
+    font-size: xx-small;
+  }
+  .Details {
+    color: ghostwhite;
+    width: 20vw;
+  }
+}
+.Details>img{
+  height: 2.5em;
+  width: 5em;
+  /* object-fit: contain; */
+  border-radius: 2em;
 }
