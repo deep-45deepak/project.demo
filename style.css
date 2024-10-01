@@ -4,6 +4,7 @@
 
 body {
   background-color: ghostwhite;
+  max-width: 100vw;
 }
 
 @media only screen and (min-width: 750px) {
@@ -14,7 +15,7 @@ body {
     background-color: ghostwhite;
     height: auto;
     width: 100vw;
-}
+  }
   #break {
     height: 1.5rem;
     border: 1px solid darkgreen;
@@ -30,7 +31,6 @@ body {
     width: 5vw;
     border-radius: 1em;
     margin: 0.5em 5em 0em 2em;
-
   }
   .heading {
     width: 55vw;
@@ -91,11 +91,42 @@ body {
     font-weight: 500;
     cursor: pointer;
   }
+  /* Control Panel  */
+
+  .ControlPanel {
+    text-align: center;
+    height: auto;
+    width: auto;
+    background-color: white;
+    padding: 1em;
+    float: right;
+    position: sticky;
+    top: 8em;
+    right: 1em;
+    border-radius: 2em;
+  }
+  .ControlPanel h3 {
+    margin: 1em 0em 1em 0em;
+  }
+  #profile {
+    height: 2em;
+    width: 2em;
+    border: 0.01em solid black;
+    border-radius: 50%;
+  }
+
+  .menu {
+    border: 0.01em solid gray;
+    margin: 1em;
+    padding: 0.41em;
+    background-color: white;
+    border-radius: 1em;
+}
+  .menu:active{
+    border: 2px solid #04aa6d;
+  }
 
   /* Main Starts from here */
-  main{
-    width: 85vw;
-  }
   .first {
     width: 98vw;
     height: auto;
@@ -104,10 +135,10 @@ body {
     text-align: center;
     margin: 0em 0.5em;
     border-radius: 2em;
-}
-.first img{
-  max-width: 85%;
-}
+  }
+  .first img {
+    max-width: 85%;
+  }
   .text {
     display: flex;
     flex-direction: column;
@@ -143,137 +174,158 @@ body {
     cursor: pointer;
   }
 
-        /* Second starts from here  */
+  /* Second starts from here  */
 
-  .secondTop{
+  .secondTop {
     height: auto;
     width: 100vw;
     color: green;
     text-align: center;
   }
-  .secondTop>h1{
+  .secondTop > h1 {
     font-size: xxx-large;
     padding: 1em 0em 0.1em 0em;
   }
-  .secondTop>h3{
+  .secondTop > h3 {
     font-size: large;
     padding: 0.1em 0em 2em 0em;
   }
-  .secondTop a{
+  .secondTop a {
     color: white;
     text-decoration: none;
     background-color: #acc6bc;
     padding: 0.5em;
     margin: 0.4em;
     border-radius: 0.5em;
-}
-.grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr  1fr;
-  justify-items: center;
-  padding: 3em 0em;
-  grid-gap: 2em;
-}
-.box{
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    padding: 3em 0em;
+    grid-gap: 2em;
+  }
+  .box {
     height: auto;
     width: auto;
-}
-.box>img{
-  border-radius: 2em;
-  height: 15em;
-  width: 23em;
-  object-fit:fill;
-}
-.box>img:hover{
-  border-radius: 2em;
-  box-shadow: 5px 5px 10px #abf1d5;
-}
-.secondEnd{
+  }
+  .box > img {
+    border-radius: 2em;
+    height: 15em;
+    width: 23em;
+    object-fit: fill;
+  }
+  .box > img:hover {
+    border-radius: 2em;
+    box-shadow: 5px 5px 10px #abf1d5;
+  }
+  .secondEnd {
     height: 10vh;
     width: auto;
     text-align: center;
-}
-#SecBtn{
+  }
+  #SecBtn {
     border: none;
     font-size: medium;
     padding: 0.5em 1.5em;
     color: white;
     background-color: #16bb7c;
     border-radius: 0.5em;
-}
+  }
 
-/* third Section starts from here. */
+  /* third Section starts from here. */
 
-.third{
-  margin: 2em;
-  height: 100vh;
-  width: 100vw;
-}
-.thirdContent{
-  background-color: transparent;
-}
-.thirdContent>h1{
-  font-size:2.5em;
-}
+  .third {
+    margin: 2em;
+    height: auto;
+    width: 100vw;
+    color: #04aa6d;
+    text-align: center;
+  }
+  .thirdContent {
+    background-color: transparent;
+  }
+  .thirdContent > h1 {
+    font-size: 2.5em;
+    color: #04aa6d;
+  }
 
   /* Footer starts from here.. */
   .last {
-    width: 100vw;
+    background-color: #0a2c1f;
+    margin: 0.9px;
     height: auto;
+    width: auto;
+    color: white;
+    margin-bottom: 0.1em;
+    text-align: center;
+  }
+  .last > p {
+    border-top: 2px solid gray;
+    padding: 0.41em 6em;
+  }
+  .footInfo {
+    text-align: left;
+    width: auto;
+    border-top-left-radius: 1.4em;
+    border-top-right-radius: 1.4em;
+    padding: 4em 1em 2em 4em;
+    background-color: #0a2c1f;
+    display: flex;
+  }
+  .fBox {
+    height: 100%;
+    width: 50vw;
+    list-style: none;
+  }
+  .fBox > h1 {
+    margin: 0em 0em 0.2em 0.41em;
+    font-size: 45px;
+  }
+  .space {
+    margin: 0.7em;
   }
   .icons {
     width: 100vw;
     height: auto;
-    /* padding: 1em 0em 1em 0em; */
-    background-color: #04aa6d;
-    border-bottom: 0.1em solid mintcream;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
   }
   .icons i {
-    margin: 1em 2em;
+    margin: 1em 0.5em;
   }
-  .icons i:hover{
-    text-shadow: 10px 1px 10px white;
+  .sBox {
+    height: 0.1px;
+    width: 50%;
   }
-  .info {
-    width: 100vw;
-    height: 80%;
-    background-color: rgb(4, 4, 61);
-    padding: 4em 0em;
-    display: flex;
-    justify-content: space-evenly;
-}
-#glow:hover{
-  text-shadow: 1px 1px 10px white;
-}
-.Details {
-    color: ghostwhite;
-    width: 20vw;
+  .sBox > h2 {
+    margin-bottom: 0.4em;
   }
-}
-.Details>img{
-  height: 5em;
-  width: 6em;
-  object-fit: contain;
-  /* mix-blend-mode:screen; */
+  .sBox > input {
+    padding: 0.41em 4em 0.41em 1em;
+    border-radius: 1em;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-bottom: 0.41em;
+  }
+  .sBox > button {
+    padding: 0.5em;
+    color: white;
+    border-radius: 1em;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-bottom: 0.41em;
+  }
+  .sBox > button:active {
+    border: 1.5px solid lightgray;
+    color: gray;
+  }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 660px) {
   .navbar {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: ghostwhite;
-    height: 2.5em;
     width: 100vw;
-    position: fixed;
-    top: 0px;
-  }
-  #break {
-    display: none;
+    height: 2.5em;
   }
   .left {
     display: flex;
@@ -283,73 +335,110 @@ body {
     margin: 0.4em 0.4em 0.2em 2em;
   }
   .logo img {
-    height: 25px;
     width: 15vw;
     border-radius: 1em;
-    margin: 0.5em 2em 0.5em 0.3em;
+    margin: 0.5em 1.5em 0.5em 0em;
   }
-  .heading>button{
+  .heading > button {
     display: none;
   }
-  .Search{
+  .Search {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .Search>input{
+  .Search > input {
     border: 0.12em solid gray;
     height: 2em;
-    max-width: 8em;
-    padding: 0.5em;
+    max-width: 10em;
+    padding: 1em;
     border-radius: 1em;
   }
-  .Search>button{
-    background-color: #04aa6d;
+  .Search > button {
+    background-color: inherit;
     border-radius: 1em;
-    color: white;
-    border: none;
+    color: #16bb7c;
+    font-size: large;
+    border:  none;
     margin: 0.2em;
-    padding: 0.2em;
-  }
-  .Search>input:active {
-    border: none;
-    outline: none;
+    padding: 0.2em 0.7em;
   }
   .right {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 50vw;
-    margin: 0.6em 0.4em 0.5em 2em;
+    width: 40vw;
+    margin: 0.6em 1.5em 0.5em 0em;
   }
-  .rightSecBtn {
+  .right button {
     border: none;
-    font-family: "lora";
     font-size: medium;
     background-color: #04aa6d;
     color: white;
-    padding: 0.4em;
+    padding: 0.4em 1em;
     border-radius: 1em;
-    font-weight: 500;
     cursor: pointer;
   }
-  /* first starts from here */
-  .first {
-    margin-top: 2.7em;
-    max-width: 100vw;
+
+  /* control panel  */
+  .ControlPanel {
+    text-align: center;
+    font-size: small;
     height: auto;
+    width: auto;
+    background-color: white;
+    padding: 1em;
+    float: right;
+    position: sticky;
+    top: 8em;
+    right: 1em;
+    border-radius: 2em;
+  }
+  .ControlPanel h3 {
+    margin: 1em 0em 1em 0em;
+  }
+  #profile {
+    height: 2em;
+    width: 2em;
+    border: 0.01em solid black;
+    border-radius: 50%;
+  }
+
+  .menu {
+    border: 0.01em solid gray;
+    margin: 1em;
+    padding: 0.41em;
+    background-color: white;
+    border-radius: 1em;
+    font-size: xx-small;
+}
+.menu button {
+  display: none;
+}
+  .menu:active{
+    border: 2px solid #04aa6d;
+  }
+
+  /* first starts from here */
+
+  .first {
+    width: 98vw;
+    height: 60vh;
     background-color: #04aa6d;
     padding-top: 2em;
     text-align: center;
+    margin: 0em 0.5em;
+    border-radius: 1.5em;
+}
+  .first img {
+    max-width: 85%;
   }
   .text {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: "Lora";
-  }
-  .first img {
-    max-width: 80vw;
+    /* display: none; */
   }
   .text > h1 {
     font-size: x-large;
@@ -360,12 +449,13 @@ body {
     display: none;
   }
   .text > button {
-    font-size: medium;
-    margin: 2em;
+    font-size: small;
+    margin: 0.5em;
     padding: 0.4em 1em;
     border: none;
     border-radius: 1em;
   }
+  .text p:hover,
   .text h1:hover {
     text-shadow: 5px 5px 15px white;
   }
@@ -373,56 +463,4 @@ body {
     border: 2px solid white;
     cursor: pointer;
   }
-
-  /* Footer starts here */
-  .last {
-    width: 100vw;
-    height: auto;
-    margin: none;
-  }
-  .icons {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-    padding: 0.2em -1em;
-    border-bottom: 0.1em solid mintcream;
-    padding-bottom: 0.5em;
-  }
-  .icons i {
-    margin: 0.7em 0.9em 0em 0.9em;
-    height: 0.2em;
-    width: 0.2em;
-  }
-  .info {
-    width: 100vw;
-    height: 80%;
-    background-color: black;
-    padding: 1.5em 0em;
-    display: flex;
-    justify-content: space-evenly;
-    border-left: 0.1em solid mintcream;
-    border-radius: 1em solid white;
-}
-  .info h1 {
-    font-size: medium;
-  }
-  .info h3 {
-    font-size: xx-small;
-  }
-  .info p {
-    font-size: xx-small;
-  }
-  .Details {
-    color: ghostwhite;
-    width: 20vw;
-  }
-}
-.Details>img{
-  height: 2.5em;
-  width: 5em;
-  /* object-fit: contain; */
-  border-radius: 2em;
 }
