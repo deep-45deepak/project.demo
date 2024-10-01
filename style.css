@@ -14,9 +14,7 @@ body {
     background-color: ghostwhite;
     height: auto;
     width: 100vw;
-    position: fixed;
-    top: 0px;
-  }
+}
   #break {
     height: 1.5rem;
     border: 1px solid darkgreen;
@@ -95,14 +93,21 @@ body {
   }
 
   /* Main Starts from here */
+  main{
+    width: 85vw;
+  }
   .first {
-    margin-top: 3em;
-    width: 100vw;
+    width: 98vw;
     height: auto;
     background-color: #04aa6d;
     padding-top: 2em;
     text-align: center;
-  }
+    margin: 0em 0.5em;
+    border-radius: 2em;
+}
+.first img{
+  max-width: 85%;
+}
   .text {
     display: flex;
     flex-direction: column;
@@ -137,20 +142,14 @@ body {
     border: 2px solid white;
     cursor: pointer;
   }
-  .second{
-    /* height: 65vh; */
+
+        /* Second starts from here  */
+
+  .secondTop{
+    height: auto;
     width: 100vw;
+    color: green;
     text-align: center;
-    background-color: white;
-    color: black;
-  }
-  .secondtop{
-    height: 30vh;
-    width: 60vw;
-    background-color: white;
-    color: black;
-    text-align: center;
-    overflow:scroll;
   }
   .secondTop>h1{
     font-size: xxx-large;
@@ -163,50 +162,53 @@ body {
   .secondTop a{
     color: white;
     text-decoration: none;
-    border: 1px solid gray;
-    background-color: rgb(209, 206, 206);
-    padding: 0.3em;
+    background-color: #acc6bc;
+    padding: 0.5em;
     margin: 0.4em;
-    border-radius: 0.4em;
+    border-radius: 0.5em;
 }
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  
+  grid-template-rows: 1fr  1fr;
+  justify-items: center;
+  padding: 3em 0em;
+  grid-gap: 2em;
 }
 .box{
     height: auto;
-    width: 20vw;
-    border: 0.001em solid gray;
-    margin: 2em;
+    width: auto;
+}
+.box>img{
+  border-radius: 2em;
+  height: 15em;
+  width: 23em;
+  object-fit:fill;
+}
+.box>img:hover{
+  border-radius: 2em;
+  box-shadow: 5px 5px 10px #abf1d5;
 }
 .secondEnd{
     height: 10vh;
     width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 #SecBtn{
     border: none;
     font-size: medium;
-    padding: 0.4em 1.5em;
+    padding: 0.5em 1.5em;
     color: white;
-    background-color: rgb(209, 206, 206);
+    background-color: #16bb7c;
     border-radius: 0.5em;
 }
+
 /* third Section starts from here. */
+
 .third{
-  height: 55vh;
+  margin: 2em;
+  height: 100vh;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  padding: 4.5vw;
-  align-items:start;
-  background-image: url(/Images/section3.png);
-  background-size:cover;
-  color: white;
 }
 .thirdContent{
   background-color: transparent;
@@ -224,7 +226,7 @@ body {
     width: 100vw;
     height: auto;
     /* padding: 1em 0em 1em 0em; */
-    background-color: rgb(56, 56, 56);
+    background-color: #04aa6d;
     border-bottom: 0.1em solid mintcream;
     display: flex;
     justify-content: space-around;
@@ -239,12 +241,10 @@ body {
   .info {
     width: 100vw;
     height: 80%;
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(4, 4, 61);
     padding: 4em 0em;
     display: flex;
     justify-content: space-evenly;
-    border-left: 0.1em solid mintcream;
-    border-radius: 1em;
 }
 #glow:hover{
   text-shadow: 1px 1px 10px white;
@@ -255,11 +255,10 @@ body {
   }
 }
 .Details>img{
-  height: 4em;
+  height: 5em;
   width: 6em;
   object-fit: contain;
-  border-radius: 2em;
-  /* mix-blend-mode: screen; */
+  /* mix-blend-mode:screen; */
 }
 
 @media only screen and (max-width: 769px) {
@@ -387,7 +386,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(56, 56, 56);
+    background-color: black;
     padding: 0.2em -1em;
     border-bottom: 0.1em solid mintcream;
     padding-bottom: 0.5em;
@@ -400,7 +399,7 @@ body {
   .info {
     width: 100vw;
     height: 80%;
-    background-color: rgb(56, 56, 56);
+    background-color: black;
     padding: 1.5em 0em;
     display: flex;
     justify-content: space-evenly;
