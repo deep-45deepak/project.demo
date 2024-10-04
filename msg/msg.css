@@ -1,0 +1,150 @@
+
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #04aa6d;
+}
+
+
+.ControlPanel {
+    text-align: center;
+    height: auto;
+    width: auto;
+    background-color: white;
+    padding: 1em;
+    float: right;
+    position: sticky;
+    top: 7em;
+    right: 1em;
+    border-radius: 2em;
+    font-size: large;
+
+  }
+  .ControlPanel h3 {
+    margin: 1em 0em 1em 0em;
+  }
+  #profile {
+    height: 40px;
+    width: 40px;
+    border: 0.01em solid black;
+    border-radius: 50%;
+  }
+
+  .menu {
+    border: 0.01em solid gray;
+    margin: 0.5em;
+    padding: 0.41em;
+    background-color: #04aa6d;
+    border-radius: 1em;
+}
+.menu>button{
+  background-color: #04aa6d;
+  color: white;
+}
+  .menu:active{
+    border: 2px solid white;
+  }
+
+
+
+.inbox-container {
+	display: flex;
+	max-width: 60vw;
+	height: auto;
+	margin: 5em auto;
+	background-color: mintcream;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px white;
+	border-radius: 2em;
+}
+
+.sidebar {
+	width: 250px;
+	background-color: #333;
+	padding: 20px;
+	border-right: 1px solid #ddd;
+	border-radius: 2em;
+}
+
+.profile {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.profile img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.profile h2 {
+	color: #fff;
+	margin-top: 10px;
+}
+
+.profile p {
+	color: #ccc;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	margin-bottom: 10px;
+}
+
+nav ul li a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #fff;
+}
+
+nav ul li a.active {
+	color: #fff;
+	background-color: #444;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.mail-list {
+	flex-grow: 1;
+	padding: 20px;
+}
+
+.mail-list h2 {
+	margin-top: 0;
+}
+
+.mail-item {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.mail-item img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.mail-content {
+	flex-grow: 1;
+}
+
+.mail-content h3 {
+	margin-top: 0;
+}
+
+.mail-content p {
+	color: #ccc;
+	margin-bottom: 10px;
+}

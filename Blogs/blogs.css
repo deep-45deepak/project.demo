@@ -1,0 +1,46 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: mintcream;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 4em auto;
+    padding: 2em;
+    background-color: #04aa6d;
+    border: 0.041em solid #ddd;
+    border-radius: 1em;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-card {
+    margin: 20px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    background-color: mintcream;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-card:hover {
+    transform: scale(1.1);
+}
+
+.category-card h2 {
+    margin-top: 0;
+}
+
+.category-card p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+
+

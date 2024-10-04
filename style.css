@@ -1,5 +1,6 @@
 * {
   margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -16,28 +17,33 @@ body {
     height: auto;
     width: 100vw;
   }
+
   #break {
     height: 1.5rem;
     border: 1px solid darkgreen;
   }
+
   .left {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 75vw;
   }
+
   .logo img {
     height: 50px;
     width: 5vw;
     border-radius: 1em;
     margin: 0.5em 5em 0em 2em;
   }
+
   .heading {
     width: 55vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
+
   .heading button {
     border: none;
     background-color: ghostwhite;
@@ -47,11 +53,13 @@ body {
     border-radius: 1em;
     font-weight: 500;
   }
+
   .heading button:hover {
     background-color: #04aa6d;
     color: white;
     cursor: pointer;
   }
+
   .Search {
     border: 0.14em solid gray;
     height: auto;
@@ -59,27 +67,32 @@ body {
     padding: 0em 0.5em 0em 0.6em;
     border-radius: 1em;
   }
+
   .Search > input {
     border: none;
     font-family: lora;
     background-color: ghostwhite;
     font-size: medium;
   }
+
   .Search > input:focus {
     outline: none;
     border: none;
   }
+
   #effect:hover {
     background-color: rgb(216, 215, 215);
     padding: 0.3em;
     border-radius: 50%;
   }
+
   .right {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 25vw;
   }
+
   .right button {
     border: none;
     font-family: "lora";
@@ -91,6 +104,7 @@ body {
     font-weight: 500;
     cursor: pointer;
   }
+
   /* Control Panel  */
 
   .ControlPanel {
@@ -101,9 +115,11 @@ body {
     padding: 1em;
     float: right;
     position: sticky;
-    top: 8em;
+    top: 7em;
     right: 1em;
     border-radius: 2em;
+    font-size: large;
+
   }
   .ControlPanel h3 {
     margin: 1em 0em 1em 0em;
@@ -117,27 +133,97 @@ body {
 
   .menu {
     border: 0.01em solid gray;
-    margin: 1em;
+    margin: 0.5em;
     padding: 0.41em;
-    background-color: white;
+    background-color: #04aa6d;
     border-radius: 1em;
 }
+.menu>button{
+  background-color: #04aa6d;
+  color: white;
+}
   .menu:active{
-    border: 2px solid #04aa6d;
+    border: 2px solid white;
   }
+
+  /* Pop up notification code. */
+
+#notification-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20vw;
+  background-color: white;
+  border: 1px solid #0a2c1f;
+  border-radius: 2em;
+  box-shadow: 5px 5px 10px gray;
+  padding: 2em;
+  display: none;
+}
+
+#notification-container h2 {
+  margin-top: 0;
+  color: #04aa6d;
+}
+
+#notification-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#notification-container li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#notification-container li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#notification-container li .notification-content {
+  flex-grow: 1;
+}
+
+#notification-container li .notification-content h3 {
+  margin-top: 0;
+  color: black;
+}
+
+#notification-container li .notification-content p {
+  color: darkgreen;
+  font-size: 0.9em;
+}
+
+#notification-container li .notification-content span {
+  color: gray;
+  font-size: 0.8em;
+}
+
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
 
   /* Main Starts from here */
   .first {
     width: 98vw;
     height: auto;
     background-color: #04aa6d;
-    padding-top: 2em;
-    text-align: center;
+    padding-top: 1em;
     margin: 0em 0.5em;
     border-radius: 2em;
+    text-align: center;
   }
   .first img {
-    max-width: 85%;
+    max-width: 80%;
   }
   .text {
     display: flex;
@@ -182,14 +268,17 @@ body {
     color: green;
     text-align: center;
   }
+
   .secondTop > h1 {
     font-size: xxx-large;
     padding: 1em 0em 0.1em 0em;
   }
+
   .secondTop > h3 {
     font-size: large;
     padding: 0.1em 0em 2em 0em;
   }
+
   .secondTop a {
     color: white;
     text-decoration: none;
@@ -198,6 +287,7 @@ body {
     margin: 0.4em;
     border-radius: 0.5em;
   }
+
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -206,25 +296,30 @@ body {
     padding: 3em 0em;
     grid-gap: 2em;
   }
+
   .box {
     height: auto;
     width: auto;
   }
+
   .box > img {
     border-radius: 2em;
     height: 15em;
     width: 23em;
     object-fit: fill;
   }
+
   .box > img:hover {
     border-radius: 2em;
     box-shadow: 5px 5px 10px #abf1d5;
   }
+
   .secondEnd {
     height: 10vh;
     width: auto;
     text-align: center;
   }
+
   #SecBtn {
     border: none;
     font-size: medium;
@@ -243,15 +338,28 @@ body {
     color: #04aa6d;
     text-align: center;
   }
+
   .thirdContent {
     background-color: transparent;
   }
+
   .thirdContent > h1 {
     font-size: 2.5em;
     color: #04aa6d;
   }
 
   /* Footer starts from here.. */
+  #goto{
+    background-color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 0.4em;
+    padding: 0.4em 1em;
+    margin: 1em 0em 0em 0em;
+}
+#goto:active{
+  background-color: gray;
+}
   .last {
     background-color: #0a2c1f;
     margin: 0.9px;
@@ -321,6 +429,7 @@ body {
   }
 }
 
+
 @media only screen and (max-width: 660px) {
   .navbar {
     display: flex;
@@ -381,6 +490,7 @@ body {
   }
 
   /* control panel  */
+
   .ControlPanel {
     text-align: center;
     font-size: small;
