@@ -11,9 +11,11 @@ darkModeBtn.addEventListener("click",(e)=>{
     const searchBtn = document.querySelector("#Search");
     searchBtn.style.backgroundColor = 'black';
     searchBtn.style.color = "white";
-    const rBtn = document.children('.heading');
-    rBtn.style.backgroundColor = 'black';
-    rBtn.style.color = "white";
+    const CPanel = document.querySelector(".ControlPanel");
+    CPanel.style.backgroundColor = 'black';
+    const right = document.querySelectorAll('.rBtn');
+    right.style.backgroundColor = 'black';
+    right.style.color = "white";
 }else if(nav.style.backgroundColor=="black"){
         const searchBtn = document.querySelector("#Search");
         searchBtn.style.backgroundColor = 'mintcream';
@@ -21,6 +23,8 @@ darkModeBtn.addEventListener("click",(e)=>{
         nav.style.color = "Black";
         document.body.style.backgroundColor = "mintcream";
         document.body.style.color = "Black";
+        const CPanel = document.querySelector(".ControlPanel");
+        CPanel.style.backgroundColor = 'white';
     }
 });
 
