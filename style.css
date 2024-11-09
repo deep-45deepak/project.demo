@@ -1,12 +1,11 @@
 
-* {
+*{
   margin: 0px;
   padding: 0px;
 }
 
 body {
   background-color: ghostwhite;
-  max-width: 100vw;
 }
 
 @media only screen and (min-width: 750px) {
@@ -16,11 +15,11 @@ body {
     justify-content: center;
     background-color: ghostwhite;
     height: auto;
-    width: 100vw;
+    width: auto;
   }
 
   #break {
-    height: 1.5rem;
+    height: 1.5em;
     border: 1px solid darkgreen;
   }
 
@@ -28,18 +27,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 75vw;
+    width: 75%;
   }
 
   .logo img {
-    height: 50px;
-    width: 5vw;
+    height: 3em;
+    width: 5em;
     border-radius: 1em;
     margin: 0.5em 5em 0em 2em;
   }
 
   .heading {
-    width: 55vw;
+    width: 65%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -64,12 +63,13 @@ body {
   .Search {
     border: 0.14em solid gray;
     height: auto;
-    max-width: auto;
+    width: auto;
     padding: 0em 0.5em 0em 0.6em;
     border-radius: 1em;
   }
 
   .Search > input {
+    width: 6em;
     border: none;
     font-family: lora;
     background-color: ghostwhite;
@@ -91,7 +91,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 25vw;
+    width: 25%;
   }
 
   .right button {
@@ -243,17 +243,18 @@ body {
 
   /* Main Starts from here */
   .first {
-    z-index: 0;
-    width: 98vw;
+    z-index: -1;
+    width: auto;
     height: auto;
     background-color: #04aa6d;
     padding-top: 1em;
-    margin: 0em 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     border-radius: 2em;
     text-align: center;
   }
   .first img {
-    max-width: 80%;
+    width: auto;
   }
   .text {
     display: flex;
@@ -293,12 +294,12 @@ body {
 /* Second section starts from here */
 
 .second {
-  width: auto;
+  width: 100%;
 }
 
 .secondTop {
   height: auto;
-  width: auto;
+  width: 100%;
   color: green;
   text-align: center;
 }
@@ -341,7 +342,7 @@ body {
   border-radius: 1em;
   height: 15em;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   max-width: 23em;
 }
 

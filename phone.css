@@ -1,243 +1,381 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+@media only screen and (max-width: 400px) {
+
   body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: ghostwhite;
+    position: relative;
   }
-  
-  /* Navbar Styles */
   .navbar {
     display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    align-items: center;
+    justify-content: center;
+    background-color: mintcream;
+    height: auto;
+    width: 100%;
   }
-  
-  .navbar .left,
-  .navbar .right {
+  #break {
+    height: 1.5em;
+    border: 1px solid darkgreen;
+  }
+  .logo img {
+    height: 2.5em;
+    width: 5em;
+    border-radius: 1em;
+    margin: 0.2em 1em 0em 1em;
+  }
+  .left {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
   }
-  
-  .navbar .left .logo img {
-    width: 50px;
-  }
-  
-  .navbar button, .navbar input {
-    margin: 0 5px;
-    padding: 10px;
-    border: none;
-    background-color: #04aa6d;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .navbar .rBtn {
-    background-color: #04aa6d;
-    color: white;
-  }
-  
-  .navbar .rBtn:hover {
-    background-color: #45a049;
-  }
-  
-  .navbar input {
-    padding: 7px;
-    border-radius: 5px;
-  }
-  
-  /* Control Panel */
-  .ControlPanel {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #333;
-    width: 250px;
-    height: 100%;
-    color: white;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-  }
-  
-  .ControlPanel .content, .ControlPanel .Shortcut {
-    margin-top: 20px;
-  }
-  
-  .ControlPanel .menu {
+  .heading {
+    width: 65%;
     display: flex;
     align-items: center;
-    padding: 10px;
+    justify-content: space-around;
   }
-  
-  .ControlPanel .menu i {
-    margin-right: 10px;
+  .heading button {
+    display:none;
   }
-  
-  .ControlPanel .menu button {
-    color: white;
-    background-color: transparent;
+  .Search {
+    border: 0.14em solid gray;
+    height: auto;
+    width: auto;
+    padding: 0em 0.5em 0em 0.6em;
+    border-radius: 1em;
+  }
+  .Search > input {
+    width: 6em;
     border: none;
-    font-size: 16px;
-    cursor: pointer;
+    font-family: lora;
+    background-color: ghostwhite;
+    font-size: medium;
   }
-  
-  .ControlPanel .menu button:hover {
-    background-color: #4b4b4b;
+  .Search > input:focus {
+    outline: none;
+    border: none;
   }
-  
-  /* Main Section */
-  .main {
-    margin-top: 20px;
-    padding: 0 20px;
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25%;
   }
-  
-  .main .first, .main .second, .main .third {
-    margin-bottom: 20px;
-  }
-  
-  .first .text {
-    max-width: 50%;
-    padding: 20px;
-  }
-  
-  .first .text h1 {
-    font-size: 2em;
-    font-weight: bold;
-  }
-  
-  .first .text p {
-    font-size: 1.2em;
-    line-height: 1.5;
-  }
-  
-  .first img {
-    width: 100%;
-    border-radius: 20px;
-  }
-  
-  .second .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-  
-  .second .grid .box img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .secondEnd button {
-    padding: 10px 20px;
+  .right button {
+    border: none;
+    font-family: "lora";
+    font-size: small;
     background-color: #04aa6d;
     color: white;
-    border: none;
+    padding: 0.2em 0.5em;
+    border-radius: 1em;
     cursor: pointer;
   }
-  
-  /* Footer */
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+  .rBtn {
+    background-color: mintcream;
+  }
+    /* Control Panel  */
+
+/* Styles for Open Button */
+      .open-btn {
+        position: absolute;
+        top:5em;
+        right: 1em;
+        z-index: 100;
+        padding: 5px 10px;
+        background-color: #04aa6d;
+        color: white;
+        border: 1px solid white;
+        border-radius: 2em;
+        cursor: pointer;
+        margin: 2px;
+}
+      /* Styles for Control Panel */
+      .ControlPanel {
+        z-index: 100;
+        text-align: center;
+        height: auto;
+        width: auto;
+        background-color: white;
+        padding: 1em;
+        float: right;
+        position: sticky;
+        top: 5em;
+        right: 0.5em;
+        border-radius: 2em;
+        font-size: large;
+        display: none;
+      }
+      #profile {
+        height: 2em;
+        width: 2em;
+        border: 0.01em solid black;
+        border-radius: 50%;
+      }
+      .ControlPanel.active {
+        display: block;
+      }
+      .menu {
+        border: 0.01em solid gray;
+        margin: 0.2em;
+        padding: 0.02em;
+        background-color: #04aa6d;
+        border-radius: 1em;
+      }
+      .menu > button {
+        background-color: #04aa6d;
+        color: white;
+      }
+      .menu > i{
+        display: none;
+      }
+      .menu:active {
+        border: 2px solid white;
+      }
+        /* Main Starts from here */
+  .first {
+    z-index: -1;
+    width: auto;
+    height: auto;
+    background-color: #04aa6d;
+    padding-top: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 2em;
     text-align: center;
   }
-  
-  footer button {
-    padding: 10px 20px;
-    background-color: #04aa6d;
+  .first img {
+    width: 90%;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* font-family: "Lora"; */
+  }
+  .text > h1 {
+    font-size: large;
     color: white;
+    cursor: none;
+  }
+  .text > p {
+    cursor: none;
+    color: white;
+    font-size: small;
+    margin: 1em;
+    min-width: 50vw;
+    max-width: 70vw;
+  }
+  .text > button {
+    font-size: medium;
+    padding: 0.2em 0.5em;
     border: none;
-    cursor: pointer;
+    border-radius: 1em;
   }
-  
-  footer .fBox {
-    margin-bottom: 20px;
+  .second {
+    width: 100%;
+    text-align:center;
   }
-  
-  footer .fBox i {
-    margin: 5px;
+
+  .secondTop {
+    height: auto;
+    width: 100%;
+    color: green;
+    text-align: center;
   }
-  
-  /* Media Queries for Responsive Design */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .navbar .left,
-    .navbar .right {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .navbar .rBtn {
-      margin-bottom: 10px;
-      width: 100%;
-    }
-  
-    .ControlPanel {
-      width: 200px;
-      transform: translateX(100%);
-    }
-  
-    .main .first, .main .second, .main .third {
-      text-align: center;
-    }
-  
-    .first .text {
-      max-width: 100%;
-    }
-  
-    .second .grid {
-      grid-template-columns: 1fr;
-    }
-  
-    footer .footInfo {
-      display: block;
-    }
+  .secondTop > h1 {
+    font-size: 2em;
+    padding: 1em 0 0.1em 0;
   }
-  
-  /* Mobile First Layout */
-  @media (max-width: 480px) {
-    .navbar {
-      padding: 5px;
-    }
-  
-    .navbar .left .logo img {
-      width: 40px;
-    }
-  
-    .navbar .rBtn {
-      padding: 8px;
-      font-size: 14px;
-    }
-  
-    .main .first .text h1 {
-      font-size: 1.5em;
-    }
-  
-    .first img {
-      max-width: 100%;
-      height: auto;
-    }
-  
-    .second .grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .footer .fBox {
-      margin-bottom: 15px;
-    }
-  
-    footer p {
-      font-size: 0.8em;
-    }
+
+  .secondTop > h3 {
+    font-size: x-small;
+    padding: 0.1em 0 2em 0;
   }
-  
+  .secondTop a {
+    color: white;
+    text-decoration: none;
+    background-color: #acc6bc;
+    padding: 0.2em;
+    margin: 0.1em;
+    border-radius: 0.5em;
+    font-size: xx-small;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    padding: 3em 0;
+    grid-gap: 2em;
+  }
+
+  .box {
+    height: auto;
+    width: auto;
+  }
+  .box > img {
+    border-radius: 1em;
+    height: 5em;
+    width: 100%;
+    object-fit: fill;
+    max-width: 23em;
+  }
+  .box > img:hover {
+    box-shadow: 5px 5px 10px #abf1d5;
+  }
+  .secondEnd {
+    height: 4em;
+    width: auto;
+    text-align: center;
+  }
+  #SecBtn {
+    border: none;
+    font-size: 1em;
+    padding: 0.4em 0.5em;
+    color: white;
+    background-color: #16bb7c;
+    border-radius: 0.5em;
+  }
+  /* Typing effect styles */
+#typing-heading {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: small;
+  width: 0;
+  animation: typing 5s steps(30, end) infinite forwards;
+  -webkit-animation: typing 5s steps(30, end) infinite forwards;
+}
+/* Animation for typing */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Expands to show the full content */
+  }
+}
+ /* third Section starts from here. */
+  /* Base Styles */
+  .third {
+    margin: 2em auto;
+    max-width: 100%;
+    color: #04aa6d;
+    text-align: center;
+  }
+
+  .thirdContent {
+    background-color: transparent;
+    padding: 1em;
+  }
+  .thirdContent > h1 {
+    font-size: 1.5em;
+    color: #04aa6d;
+    margin-bottom: 0.5em;
+  }
+  .third img {
+    width: 100%;
+    max-width: 80%;
+    height: auto;
+    margin-top: 1em;
+    border-radius: 10px;
+  }
+
+
+  /* Footer starts from here.. */
+  #goto {
+    background-color: white;
+    font-size: xx-small;
+    border: none;
+    border-radius: 0.4em;
+    padding: 0.4em 1em;
+    margin: 1em 0em 0em 0em;
+  }
+  #goto:active {
+    background-color: gray;
+  }
+  .last {
+    background-color: #0a2c1f;
+    height:max-content;
+    width: auto;
+    color: white;
+    margin-bottom: 0.1em;
+    text-align: center;
+  }
+  .last > p {
+    border-top: 2px solid gray;
+    padding: 0.41em 0em;
+  }
+  .footInfo {
+    text-align: left;
+    width: auto;
+    border-top-left-radius: 1.4em;
+    border-top-right-radius: 1.4em;
+    /* padding: 4em 1em 2em 4em; */
+    background-color: #0a2c1f;
+  }
+  .fBox {
+    margin: 0.2em;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    list-style: none;
+  }
+  .fBox > h1 {
+    font-size: large;
+  }
+  .space {
+    display:none;
+  }
+  .icons {
+    width: 100%;
+    height: auto;
+  }
+  .icons i {
+    margin: 1em 0.5em;
+  }
+  .sBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+  }
+  .span{
+    width: 80%;
+    text-align: center;
+    height: 4em;
+  }
+  .sBox > h2 {
+    margin-bottom: 0.4em;
+  }
+  .sBox > input {
+    padding: 0.4em 2em 0.4em 1em;
+    border-radius: 1em;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-bottom: 0.41em;
+  }
+  .sBox > button {
+    padding: 0.5em;
+    color: white;
+    border-radius: 1em;
+    background-color: transparent;
+    border: 1px solid white;
+  }
+  .line{
+    margin-top: 1em;
+  }
+  .sBox > button:active {
+    border: 1.5px solid lightgray;
+    color: gray;
+  }
+  #Email:focus{
+    background-color: gainsboro;
+  }
+}
+
+
+
+

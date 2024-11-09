@@ -28,6 +28,7 @@ darkModeBtn.addEventListener("click", (e) => {
         rightButtons.forEach(button => {
             button.style.backgroundColor = 'black';
             button.style.color = 'white';
+            alert("hey");
         });
 
     } else {
