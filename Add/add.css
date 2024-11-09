@@ -1,0 +1,95 @@
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Container for the form */
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Form Title */
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Label Styling */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Input Field Styling */
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        /* Image Input Styling */
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+
+        /* Submit Button Styling */
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Blog Content Styling */
+        .blog-post {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .blog-post h3 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .blog-post p {
+            font-size: 16px;
+            color: #555;
+        }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Content Submission</title>
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+
+    <!-- Form to Collect Blog Content -->
+    <div class="form-container">
+        <h2>Submit Your Blog Post</h2>
+        <form id="blogForm">
+            <label for="title">Blog Title</label>
+            <input type="text" id="title" name="title" placeholder="Enter your blog title" required>
+
+            <label for="content">Content</label>
+            <textarea id="content" name="content" placeholder="Write your blog content here..." rows="5" required></textarea>
+
+            <label for="image">Upload Image</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <button type="submit">Submit Blog</button>
+        </form>
+    </div>
+
+    <!-- Main Website Content Section (where blog posts will appear) -->
+    <div id="mainContent">
+        <h2>Latest Blog Posts</h2>
+        <!-- New blog posts will be dynamically added here -->
+    </div>
+<script src="add.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox</title>
+    <link rel="stylesheet" type="text/css" href="msg.css">
+    <link rel="icon" type="image/png" href="/Images/.blog.png">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Sidebar toggle button -->
+    <button id="toggleSidebar" class="toggle-btn">
+        <i class="fas fa-bars"></i> Menu
+    </button>
+
+    <!-- Sidebar overlay for mobile view -->
+    <div id="sidebarOverlay" class="overlay"></div>
+
+    <!-- Sidebar (Navigation Panel) -->
+    <div class="sidebar" id="sidebar">
+        <div class="profile">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1DIpd1kz9a3U1oAhsaqV9SSWCEuBl67kTfw&s" alt="Profile Picture">
+            <h2>Deepak Kumar</h2>
+            <p>dpk.41deep@gmail.com</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a id="goBack" href="#">Home</a></li>
+                <li><a href="#" class="active">Inbox</a></li>
+                <li><a href="#">Drafts</a></li>
+                <li><a href="#">Trash</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content (Inbox) -->
+    <div class="inbox-container">
+        <div class="mail-list">
+            <video autoplay loop style="width: 4em; height:4em;" src="https://cdn-icons-mp4.freepik.com/128/16903/16903974.mp4?ga=GA1.1.816481474.1726265899&semt=ais_hybrid"></video>
+            <h2>Inbox</h2>
+            <ul>
+                <!-- Email item -->
+                <ul>
+                    <li class="mail-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1DIpd1kz9a3U1oAhsaqV9SSWCEuBl67kTfw&s" alt="Profile Picture">
+                        <div class="mail-content">
+                            <h3>Smith: Welcome to Our Platform!</h3>
+                            <p>Thank you for joining us. We're excited to have you!</p>
+                            <p>10:15 AM, Today</p>
+                        </div>
+                    </li>
+                    <li class="mail-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1DIpd1kz9a3U1oAhsaqV9SSWCEuBl67kTfw&s" alt="Profile Picture">
+                        <div class="mail-content">
+                            <h3>Joe: Account Activation</h3>
+                            <p>Your account has been successfully activated. Enjoy your experience!</p>
+                            <p>11:00 AM, Today</p>
+                        </div>
+                    </li>
+                    <li class="mail-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1DIpd1kz9a3U1oAhsaqV9SSWCEuBl67kTfw&s" alt="Profile Picture">
+                        <div class="mail-content">
+                            <h3>David: New Features Update</h3>
+                            <p>We’ve added new features to enhance your experience. Check them out!</p>
+                            <p>2:45 PM, Yesterday</p>
+                        </div>
+                    </li>
+                    <li class="mail-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1DIpd1kz9a3U1oAhsaqV9SSWCEuBl67kTfw&s" alt="Profile Picture">
+                        <div class="mail-content">
+                            <h3>Anderson: Weekly Newsletter</h3>
+                            <p>Stay updated with our weekly newsletter featuring the latest news.</p>
+                            <p>8:00 AM, Monday</p>
+                        </div>
+                    </li>
+                    <li class="mail-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1DIpd1kz9a3U1oAhsaqV9SSWCEuBl67kTfw&s" alt="Profile Picture">
+                        <div class="mail-content">
+                            <h3>Stubbs: Security Alert</h3>
+                            <p>We noticed unusual activity on your account. Please review your settings.</p>
+                            <p>9:30 PM, Sunday</p>
+                        </div>
+                    </li>
+                    <li class="mail-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1DIpd1kz9a3U1oAhsaqV9SSWCEuBl67kTfw&s" alt="Profile Picture">
+                        <div class="mail-content">
+                            <h3>Brevis: Account Settings Updated</h3>
+                            <p>Your account settings have been successfully updated.</p>
+                            <p>5:20 PM, Last Friday</p>
+                        </div>
+                    </li>
+                    <li class="mail-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1DIpd1kz9a3U1oAhsaqV9SSWCEuBl67kTfw&s" alt="Profile Picture">
+                        <div class="mail-content">
+                            <h3>William: Survey Invitation</h3>
+                            <p>We value your opinion. Please take a few minutes to complete our survey.</p>
+                            <p>1:30 PM, Last Thursday</p>
+                        </div>
+                    </li>
+                    <li class="mail-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1DIpd1kz9a3U1oAhsaqV9SSWCEuBl67kTfw&s" alt="Profile Picture">
+                        <div class="mail-content">
+                            <h3>Nortje Feedback Request</h3>
+                            <p>Your feedback is important to us. Please share your thoughts.</p>
+                            <p>3:15 PM, Last Wednesday</p>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Additional email items here -->
+            </ul>
+        </div>
+    </div>
+    <div class="msg">
+        <div class="head">
+            <span>Message</span>
+        </div>
+        <div class="msg"></div>
+
+<!-- Input and Button for typing new messages -->
+<div class="message-input">
+    <input type="text" id="messageInput" placeholder="Type your message...">
+    <button id="sendButton">Send</button>
+</div>
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="msg.js"></script>
+</body>
+</html>

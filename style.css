@@ -1,0 +1,602 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: ghostwhite;
+  max-width: 100vw;
+}
+
+@media only screen and (min-width: 750px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: ghostwhite;
+    height: auto;
+    width: 100vw;
+  }
+
+  #break {
+    height: 1.5rem;
+    border: 1px solid darkgreen;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75vw;
+  }
+
+  .logo img {
+    height: 50px;
+    width: 5vw;
+    border-radius: 1em;
+    margin: 0.5em 5em 0em 2em;
+  }
+
+  .heading {
+    width: 55vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .heading button {
+    border: none;
+    background-color: ghostwhite;
+    font-family: "lora";
+    font-size: medium;
+    padding: 0.3em 0.5em;
+    border-radius: 1em;
+    font-weight: 500;
+  }
+
+  .heading button:hover {
+    background-color: #04aa6d;
+    color: white;
+    cursor: pointer;
+  }
+
+  .Search {
+    border: 0.14em solid gray;
+    height: auto;
+    max-width: auto;
+    padding: 0em 0.5em 0em 0.6em;
+    border-radius: 1em;
+  }
+
+  .Search > input {
+    border: none;
+    font-family: lora;
+    background-color: ghostwhite;
+    font-size: medium;
+  }
+
+  .Search > input:focus {
+    outline: none;
+    border: none;
+  }
+
+  #effect:hover {
+    background-color: rgb(216, 215, 215);
+    padding: 0.3em;
+    border-radius: 50%;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25vw;
+  }
+
+  .right button {
+    border: none;
+    font-family: "lora";
+    font-size: medium;
+    background-color: #04aa6d;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .rBtn {
+    background-color: mintcream;
+  }
+
+  /* Control Panel  */
+
+      /* Styles for Open Button */
+      .open-btn {
+        position: absolute;
+        right: 1.5em;
+        z-index: 100;
+        padding: 10px 20px;
+        background-color: #04aa6d;
+        color: white;
+        border: 2px solid white;
+        border-radius: 2em;
+        cursor: pointer;
+        margin: 20px;
+}
+      /* Styles for Control Panel */
+      .ControlPanel {
+        z-index: 100;
+        text-align: center;
+        height: auto;
+        width: auto;
+        background-color: white;
+        padding: 1em;
+        float: right;
+        position: sticky;
+        top: 7em;
+        right: 1em;
+        border-radius: 2em;
+        font-size: large;
+        display: none; /* Hidden by default */
+      }
+
+      /* Display ControlPanel when active class is added */
+      .ControlPanel.active {
+        display: block;
+      }
+
+      /* Other Control Panel styling */
+      .ControlPanel h3 {
+        margin: 1em 0em 1em 0em;
+      }
+
+      #profile {
+        height: 2em;
+        width: 2em;
+        border: 0.01em solid black;
+        border-radius: 50%;
+      }
+
+      .menu {
+        border: 0.01em solid gray;
+        margin: 0.5em;
+        padding: 0.41em;
+        background-color: #04aa6d;
+        border-radius: 1em;
+      }
+
+      .menu > button {
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      .menu:active {
+        border: 2px solid white;
+      }
+
+  /* Pop up notification code. */
+
+  #notification-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20vw;
+    background-color: white;
+    border: 1px solid #0a2c1f;
+    border-radius: 2em;
+    box-shadow: 5px 5px 10px gray;
+    padding: 2em;
+    display: none;
+  }
+
+  #notification-container h2 {
+    margin-top: 0;
+    color: #04aa6d;
+  }
+
+  #notification-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #notification-container li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  #notification-container li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  #notification-container li .notification-content {
+    flex-grow: 1;
+  }
+
+  #notification-container li .notification-content h3 {
+    margin-top: 0;
+    color: black;
+  }
+
+  #notification-container li .notification-content p {
+    color: darkgreen;
+    font-size: 0.9em;
+  }
+
+  #notification-container li .notification-content span {
+    color: gray;
+    font-size: 0.8em;
+  }
+
+  #close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  /* Main Starts from here */
+  .first {
+    z-index: 0;
+    width: 98vw;
+    height: auto;
+    background-color: #04aa6d;
+    padding-top: 1em;
+    margin: 0em 0.5em;
+    border-radius: 2em;
+    text-align: center;
+  }
+  .first img {
+    max-width: 80%;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lora";
+  }
+  .text > h1 {
+    font-size: xxx-large;
+    color: white;
+    cursor: none;
+  }
+  .text > p {
+    cursor: none;
+    color: white;
+    font-size: medium;
+    margin: 1em;
+    min-width: 50vw;
+    max-width: 70vw;
+  }
+  .text > button {
+    font-size: larger;
+    margin: 0.5em;
+    padding: 0.4em 1em;
+    border: none;
+    border-radius: 1em;
+  }
+  .text p:hover,
+  .text h1:hover {
+    text-shadow: 5px 5px 15px white;
+  }
+  .text button:hover {
+    border: 2px solid white;
+    cursor: pointer;
+  }
+
+/* Second section starts from here */
+
+.second {
+  width: auto;
+}
+
+.secondTop {
+  height: auto;
+  width: auto;
+  color: green;
+  text-align: center;
+}
+
+.secondTop > h1 {
+  font-size: 2em;
+  padding: 1em 0 0.1em 0;
+}
+
+.secondTop > h3 {
+  font-size: 1.2em;
+  padding: 0.1em 0 2em 0;
+}
+
+.secondTop a {
+  color: white;
+  text-decoration: none;
+  background-color: #acc6bc;
+  padding: 0.5em;
+  margin: 0.4em;
+  border-radius: 0.5em;
+  font-size: 0.9em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  padding: 3em 0;
+  grid-gap: 2em;
+}
+
+.box {
+  height: auto;
+  width: auto;
+}
+
+.box > img {
+  border-radius: 1em;
+  height: 15em;
+  width: 100%;
+  object-fit: cover;
+  max-width: 23em;
+}
+
+.box > img:hover {
+  box-shadow: 5px 5px 10px #abf1d5;
+}
+
+.secondEnd {
+  height: 10vh;
+  width: auto;
+  text-align: center;
+}
+
+#SecBtn {
+  border: none;
+  font-size: 1em;
+  padding: 0.5em 1.5em;
+  color: white;
+  background-color: #16bb7c;
+  border-radius: 0.5em;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+  .secondTop > h1 {
+    font-size: 1.5em;
+  }
+
+  .secondTop > h3 {
+    font-size: 1em;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 1.5em;
+  }
+
+  .secondTop a {
+    font-size: 0.8em;
+    padding: 0.4em;
+    margin: 0.3em;
+  }
+
+  .box > img {
+    height: 12em;
+    max-width: 100%;
+  }
+
+  #SecBtn {
+    font-size: 0.9em;
+    padding: 0.4em 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .secondTop > h1 {
+    font-size: 1.2em;
+  }
+
+  .secondTop > h3 {
+    font-size: 0.9em;
+  }
+
+  .secondTop a {
+    font-size: 0.7em;
+    padding: 0.3em;
+  }
+
+  .box > img {
+    height: 10em;
+  }
+
+  #SecBtn {
+    font-size: 0.8em;
+    padding: 0.3em 0.8em;
+  }
+}
+
+/* Typing effect styles */
+#typing-heading {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: xxx-large;
+  width: 0;
+  animation: typing 5s steps(30, end) infinite forwards;
+  -webkit-animation: typing 5s steps(30, end) infinite forwards;
+}
+
+/* Animation for typing */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Expands to show the full content */
+  }
+}
+
+
+
+
+  /* third Section starts from here. */
+  /* Base Styles */
+  .third {
+    margin: 2em auto;
+    max-width: 100%;
+    color: #04aa6d;
+    text-align: center;
+  }
+
+  .thirdContent {
+    background-color: transparent;
+    padding: 1em;
+  }
+
+  .thirdContent > h1 {
+    font-size: 2.5em;
+    color: #04aa6d;
+    margin: 0.5em 0;
+  }
+
+  .third img {
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    margin-top: 1em;
+    border-radius: 10px;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .thirdContent > h1 {
+      font-size: 2em;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .thirdContent > h1 {
+      font-size: 1.75em;
+    }
+
+    .thirdContent > p {
+      font-size: 1em;
+      padding: 0 1em;
+    }
+
+    .third img {
+      width: 90vw;
+      margin: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .thirdContent > h1 {
+      font-size: 1.5em;
+    }
+
+    .thirdContent > p {
+      font-size: 0.9em;
+    }
+
+    .third {
+      margin: 1em;
+    }
+
+    .third img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Footer starts from here.. */
+  #goto {
+    background-color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 0.4em;
+    padding: 0.4em 1em;
+    margin: 1em 0em 0em 0em;
+  }
+  #goto:active {
+    background-color: gray;
+  }
+  .last {
+    background-color: #0a2c1f;
+    margin: 0.9px;
+    height: auto;
+    width: auto;
+    color: white;
+    margin-bottom: 0.1em;
+    text-align: center;
+  }
+  .last > p {
+    border-top: 2px solid gray;
+    padding: 0.41em 6em;
+  }
+  .footInfo {
+    text-align: left;
+    width: auto;
+    border-top-left-radius: 1.4em;
+    border-top-right-radius: 1.4em;
+    padding: 4em 1em 2em 4em;
+    background-color: #0a2c1f;
+    display: flex;
+  }
+  .fBox {
+    height: 100%;
+    width: 50vw;
+    list-style: none;
+  }
+  .fBox > h1 {
+    margin: 0em 0em 0.2em 0.41em;
+    font-size: 45px;
+  }
+  .space {
+    margin: 0.7em;
+  }
+  .icons {
+    width: 100vw;
+    height: auto;
+  }
+  .icons i {
+    margin: 1em 0.5em;
+  }
+  .sBox {
+    height: 0.1px;
+    width: 50%;
+  }
+  .sBox > h2 {
+    margin-bottom: 0.4em;
+  }
+  .sBox > input {
+    padding: 0.41em 4em 0.41em 1em;
+    border-radius: 1em;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-bottom: 0.41em;
+  }
+  .sBox > button {
+    padding: 0.5em;
+    color: white;
+    border-radius: 1em;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-bottom: 0.41em;
+  }
+  .sBox > button:active {
+    border: 1.5px solid lightgray;
+    color: gray;
+  }
+}
+#Email:focus{
+  background-color: gainsboro;
+}
+

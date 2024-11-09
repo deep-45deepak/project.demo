@@ -1,0 +1,243 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .navbar .left,
+  .navbar .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .left .logo img {
+    width: 50px;
+  }
+  
+  .navbar button, .navbar input {
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    background-color: #04aa6d;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navbar .rBtn {
+    background-color: #04aa6d;
+    color: white;
+  }
+  
+  .navbar .rBtn:hover {
+    background-color: #45a049;
+  }
+  
+  .navbar input {
+    padding: 7px;
+    border-radius: 5px;
+  }
+  
+  /* Control Panel */
+  .ControlPanel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    width: 250px;
+    height: 100%;
+    color: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .ControlPanel .content, .ControlPanel .Shortcut {
+    margin-top: 20px;
+  }
+  
+  .ControlPanel .menu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .ControlPanel .menu i {
+    margin-right: 10px;
+  }
+  
+  .ControlPanel .menu button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .ControlPanel .menu button:hover {
+    background-color: #4b4b4b;
+  }
+  
+  /* Main Section */
+  .main {
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  
+  .main .first, .main .second, .main .third {
+    margin-bottom: 20px;
+  }
+  
+  .first .text {
+    max-width: 50%;
+    padding: 20px;
+  }
+  
+  .first .text h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .first .text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  .first img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .second .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .second .grid .box img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .secondEnd button {
+    padding: 10px 20px;
+    background-color: #04aa6d;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer button {
+    padding: 10px 20px;
+    background-color: #04aa6d;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer .fBox {
+    margin-bottom: 20px;
+  }
+  
+  footer .fBox i {
+    margin: 5px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar .left,
+    .navbar .right {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar .rBtn {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    .ControlPanel {
+      width: 200px;
+      transform: translateX(100%);
+    }
+  
+    .main .first, .main .second, .main .third {
+      text-align: center;
+    }
+  
+    .first .text {
+      max-width: 100%;
+    }
+  
+    .second .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    footer .footInfo {
+      display: block;
+    }
+  }
+  
+  /* Mobile First Layout */
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 5px;
+    }
+  
+    .navbar .left .logo img {
+      width: 40px;
+    }
+  
+    .navbar .rBtn {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .main .first .text h1 {
+      font-size: 1.5em;
+    }
+  
+    .first img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .second .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer .fBox {
+      margin-bottom: 15px;
+    }
+  
+    footer p {
+      font-size: 0.8em;
+    }
+  }
+  

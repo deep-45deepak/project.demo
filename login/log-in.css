@@ -1,0 +1,184 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: mintcream;
+  font-family: "Lora";
+}
+
+@media only screen and (min-width: 767px) {
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+    height: auto;
+    padding: 40px 40px;
+    background-color: mintcream;
+  }
+  .Logo {
+    font-family: "lora";
+    padding: 30px 10px 60px 50px;
+    width: 40vw;
+    height: auto;
+    border-radius: 1.5em;
+    color: rgb(15, 102, 98);
+    box-shadow: -20px -20px 20px rgb(200, 229, 246);
+  }
+
+  #break {
+    height: 29rem;
+    border: 2px solid lightblue;
+  }
+
+  .form-container {
+    font-family: "lora";
+    color: rgb(15, 102, 98);
+    width: 35vw;
+    height: auto;
+    text-align: center;
+    padding: 3em 1em 6em 1em;
+    /* background-color: mintcream; */
+    background-color: transparent;
+    border-radius: 1.5em;
+    box-shadow: 20px 20px 20px rgb(177, 216, 238);
+  }
+
+  .form-container img {
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+  }
+  .form-container input {
+    font-size: large;
+    font-family: 'lora';
+    border-radius: 2em;
+    font-weight: 200;
+    margin-top: 1em;
+    padding: 0.30em 4em 0.30em 1em;
+  }
+
+  .container p {
+    font-size: xmedium;
+    line-height: 15px;
+    letter-spacing: 0.3px;
+    margin: 15px 0;
+  }
+
+  #continue1 , #continue2 {
+    border: none;
+    padding: 0.5em 1.5em;
+    border-radius: 5em;
+    background-color: rgb(15, 102, 98);
+    color: white;
+    font-size: large;
+  }
+
+  .btn {
+    border: none;
+    color: blue;
+    background-color: #f4f5ff;
+  }
+
+  #log-in:active {
+    background-color: blue;
+    color: #f4f5ff;
+    font-weight: 200;
+  }
+}
+.login{
+  display: none;
+}
+
+
+@media only screen and (max-width: 769px) {
+  body{
+    background-color: mintcream;
+    /* background-image: url(/Images/logo.png); */
+    background-repeat:no-repeat;
+    background-position: center;
+  }
+  .container {
+    width: 70vw;
+    height: 80vh;
+    padding: 10px 10px 0px 10px;
+    background-color: mintcream;
+    background-repeat: no-repeat;
+    opacity: 0.96;
+    border: 2px solid green;
+    border-radius: 2em;
+    box-shadow: 20px 20px 20px whitesmoke;
+}
+
+  .Logo {
+    text-align: center;
+    padding: 1em;
+    width: auto;
+    height: auto;
+    font-size: medium;
+    color: rgb(15, 96, 92);
+}
+.Logo p, span ,.info{
+  display: none;
+}
+  .form-container {
+    font-family:'Times New Roman', Times, serif;
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgb(13, 109, 104);
+  }
+  .form-container h1{
+    display: none;
+  }
+  #remove{
+    display: none;
+  }
+  .form-container img {
+    margin: 10px;
+    height: 25px;
+    width: 25px;
+  }
+  .form-container input {
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 1em;
+    border: 1.5px solid gray;
+    padding: 0.5em 5em 0.5em 1em;
+    margin: 0.4em;
+  }
+  .form-container input:focus{
+    /* border: none; */
+    outline: none;
+  }
+  .container p {
+    font-size: medium;
+    letter-spacing: 0.3px;
+  }
+  #continue1 , #continue2 {
+    margin: 0.5em;
+    border: none;
+    padding: 0.5em 1.5em;
+    border-radius: 5em;
+    background-color: rgb(15, 102, 98);
+    color: white;
+    font-size: medium;
+  }
+  .btn {
+    border: none;
+    color: blue;
+    background-color: mintcream;
+  }
+
+  #log-in:active {
+    background-color: blue;
+    color: mintcream;
+  }
+}
