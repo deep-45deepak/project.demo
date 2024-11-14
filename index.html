@@ -12,7 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="website icon" type="png" href="/Images/.blog.png" />
+    <link rel="website icon" type="png" href="./Images/.blog.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href=""class="space"" rel="stylesheet" />
@@ -32,7 +32,7 @@
       <div class="navbar">
         <div class="left">
           <div class="logo">
-            <img src="./Images/logo.png" alt="logo" srcset="" />
+            <img id="themeImage" src="./Images/logo.png" alt="logo" srcset="" />
           </div>
           <div id="break"></div>
           <div class="heading">
@@ -44,7 +44,7 @@
                 style="font-size: 15px; display: inline"
               ></i>
             </button>
-            <button class="rBtn">
+            <button id="add" class="rBtn">
               Add
               <i
                 class="fa fa-caret-down"
@@ -62,10 +62,10 @@
             <div>
               <div class="Search">
                 <input
+                  id="S2"
                   type="search"
                   placeholder="Search..."
                   name="Search"
-                  id="S2"
                 />
                 <button id="S1" class="btn1">
                   <i class="fa-solid fa-magnifying-glass"></i>
@@ -78,7 +78,7 @@
         <div class="right">
           <!-- Night Mode -->
           <i id="darkMode" class="fa-solid fa-circle-half-stroke"></i>
-          <button>Log In</button>
+          <button id="login">Log In</button>
           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
@@ -114,7 +114,7 @@
 
 
     <!-- Button to open the Control Panel -->
-    <button class="open-btn" onclick="openControlPanel()">Open</button>
+    <button class="open-btn" onclick="openControlPanel()"><i class="fa-solid fa-circle-arrow-left" style="background-color: #04aa6d;color:white;"></i></button>
 
     <!-- Control Panel (Sidebar) -->
     <div class="ControlPanel" id="controlPanel">
@@ -318,4 +318,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-

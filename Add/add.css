@@ -1,95 +1,125 @@
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* Body Styling */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
+/* Body Styling */
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #e5e5e5; /* Light grey background like WhatsApp */
+    padding: 20px;
+}
 
-        /* Container for the form */
-        .form-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 500px;
-            margin: 0 auto;
-        }
 
-        /* Form Title */
-        h2 {
-            text-align: center;
-            color: #333;
-        }
+/* Container for the form */
+.form-container {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    margin: 30px auto;
+}
 
-        /* Label Styling */
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #333;
-        }
+/* Form Title */
+h2 {
+    text-align: center;
+    color: #4a4a4a; /* Soft grey for text */
+    font-size: 24px;
+    margin-bottom: 15px;
+}
 
-        /* Input Field Styling */
-        input[type="text"], textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 16px;
-        }
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #128c7e; /* Darker grey for labels */
+}
 
-        /* Image Input Styling */
-        input[type="file"] {
-            margin-bottom: 20px;
-        }
+/* Input Field Styling */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f5f5f5; /* Soft grey input fields */
+    color: black;
+}
 
-        /* Submit Button Styling */
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+/* Image Input Styling */
+input[type="file"] {
+    margin-bottom: 20px;
+    background-color: #f5f5f5; /* Grey background for file input */
+    border-radius: 8px;
+    padding: 10px;
+}
 
-        button:hover {
-            background-color: #0056b3;
-        }
+/* Submit Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #25d366; /* WhatsApp green color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
 
-        /* Blog Content Styling */
-        .blog-post {
-            background-color: #fff;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+button:hover {
+    background-color: #128c7e; /* Darker green on hover */
+}
 
-        .blog-post img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
+/* Blog Content Section */
+#mainContent {
+    margin-top: 40px;
+}
 
-        .blog-post h3 {
-            font-size: 24px;
-            color: #333;
-            margin-top: 10px;
-        }
+/* Blog Post Styling */
+.blog-post {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
 
-        .blog-post p {
-            font-size: 16px;
-            color: #555;
-        }
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.blog-post h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.blog-post p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    button {
+        padding: 15px;
+    }
+}

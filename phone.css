@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 75%;
+    width: 65%;
   }
   .heading {
     width: 65%;
@@ -59,7 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 25%;
+    width: 30%;
   }
   .right button {
     border: none;
@@ -97,13 +97,13 @@
         height: auto;
         width: auto;
         background-color: white;
-        padding: 1em;
+        padding: 0.85em;
         float: right;
         position: sticky;
         top: 5em;
         right: 0.5em;
         border-radius: 2em;
-        font-size: large;
+        font-size: small;
         display: none;
       }
       #profile {
@@ -118,11 +118,12 @@
       .menu {
         border: 0.01em solid gray;
         margin: 0.2em;
-        padding: 0.02em;
+        padding: 0.2em;
         background-color: #04aa6d;
         border-radius: 1em;
       }
       .menu > button {
+        font-size: x-small;
         background-color: #04aa6d;
         color: white;
       }
@@ -178,6 +179,7 @@
   }
 
   .secondTop {
+    text-align: center;
     height: auto;
     width: 100%;
     color: green;
@@ -196,15 +198,15 @@
     color: white;
     text-decoration: none;
     background-color: #acc6bc;
-    padding: 0.2em;
-    margin: 0.1em;
+    padding: 0.4em;
+    margin: 0.4em;
     border-radius: 0.5em;
     font-size: xx-small;
   }
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     justify-items: center;
     padding: 3em 0;
     grid-gap: 2em;
@@ -216,10 +218,8 @@
   }
   .box > img {
     border-radius: 1em;
-    height: 5em;
-    width: 100%;
-    object-fit: fill;
-    max-width: 23em;
+    width: 20em;
+    object-fit: cover;
   }
   .box > img:hover {
     box-shadow: 5px 5px 10px #abf1d5;

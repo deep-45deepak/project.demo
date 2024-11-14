@@ -116,13 +116,16 @@ body {
         position: absolute;
         right: 1.5em;
         z-index: 100;
-        padding: 10px 20px;
+        padding: 5px 10px;
         background-color: #04aa6d;
         color: white;
         border: 2px solid white;
         border-radius: 2em;
         cursor: pointer;
         margin: 20px;
+}
+.open-btn>i{
+  font-size: x-large;
 }
       /* Styles for Control Panel */
       .ControlPanel {
