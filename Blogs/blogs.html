@@ -1,33 +1,189 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="website icon" type="png" href="/Images/.blog.png" />
-    <title>Animated Blog Categories</title>
-    <link rel="stylesheet" href="blogs.css">
-</head>
-<body>
+    <title>Add Blog</title>
+    <link rel="stylesheet" href="blogs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img
+          src="../Images/logo.png"
+          alt="Logo"
+          class="logo"
+        />
+        <button class="nav-btn">Product</button>
+        <button class="nav-btn">Company</button>
+        <button class="nav-btn">Contact</button>
+      </div>
+      <div class="navbar-right">
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search..." />
+          <button class="search-btn">
+            <i
+              style="color: white"
+              class="fa-solid fa-magnifying-glass fa-lg"
+            ></i>
+          </button>
+        </div>
+        <button id="add" class="start-writing-btn">Start Writing</button>
+      </div>
+    </nav>
+    <!-- main part starts fromm here. -->
     <div class="container">
-        <div class="category-container">
-            <div class="category-card" id="card-1">
-                <h2>Category 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="category-container">
+        <div class="category-card" id="card-1">
+            <div class="G1">
+                <img class="g1b"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8V0IAR9GeuHB8MegK0H4_IgRrmkYXU8I91Q&s" alt="">
+                <h3 class="g1a">My First Interview in the Corporate World</h3>
+                <p class="g1c">
+                  The day of my first interview in the corporate world was a whirlwind
+                  of emotions—excitement, anxiety, and a touch of self-doubt. It
+                  marked a significant milestone in my life, the transition from a
+                  student to a professional. Though the journey to that day was filled
+                  with preparation, the experience taught me lessons far beyond my
+                  expectations.
+                  <button class="btn">Read more..</button>
+                </p>
             </div>
-            <div class="category-card" id="card-2">
-                <h2>Category 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="category-card" id="card-3">
-                <h2>Category 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="down">
+                <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpjj0uFVWmP4rtTOUt4phhNR2s23m2TOVwg&s" alt=""> -->
+                <h3>Preparation Begins</h3>
+                <p>
+                  When I received the email inviting me for the interview, my
+                  excitement was through the roof. But as reality set in, so did the
+                  nerves. I spent days researching the company, understanding its
+                  mission, values, and products. I reviewed common interview questions
+                  and practiced my answers in front of the mirror. My friends helped
+                  with mock interviews, giving constructive feedback to boost my
+                  confidence. The night before, I carefully ironed my outfit—a crisp
+                  shirt and formal pants—and ensured that my documents were neatly
+                  organized in a folder. Sleep, however, eluded me as I replayed
+                  possible scenarios in my head.
+                </p>
+          <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ_7mO_n26Dbrj5JNHGlg-9YsV5KJ7C12tOQ&s" alt=""> -->
+          <h4>The Day of the Interview</h4>
+          <p>
+            The morning of the interview felt surreal. With butterflies in my
+            stomach, I arrived at the company office well ahead of time. The
+            corporate atmosphere was inspiring—people in professional attire,
+            bustling around with a purpose. It was intimidating yet motivating.
+            After a short wait, I was called into the interview room. I took a
+            deep breath, straightened my posture, and walked in with a confident
+            smile.
+          </p>
+          <h3>Lessons Learned</h3>
+          <p>
+            The interview taught me several invaluable lessons: <br />
+            Preparation is key, but adaptability matters more. <br />
+            Confidence is not about knowing all the answers but about being
+            honest and composed. <br />
+            It’s okay to admit when you don’t know something, as long as you
+            show a willingness to learn
+            <h3>Conclusion</h3>
+            <p>My first interview in the corporate world wasn’t just a test of my knowledge; it was an experience that pushed me out of my comfort zone and prepared me for the challenges ahead. It marked the beginning of a journey filled with learning, growth, and endless possibilities. For anyone preparing for their first interview, my advice is simple: believe in yourself, stay prepared, and embrace the experience wholeheartedly.</p>
+          </p>
             </div>
         </div>
+        <div class="category-card" id="card-2">
+            <div class="G1">
+                <img class="g1b"  src="data:image/png;base64,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" alt="">
+                <h3 class="g1a">My Journey into Web Development: From Beginner to Enthusiast</h3>
+                <p class="g1c">
+                    Web development is a field that has fascinated me for a long time. The idea of creating something that people interact with daily—whether it’s a blog, a shopping website, or a social media platform—sparked my curiosity. My journey into web development has been a rollercoaster of challenges, learning, and rewarding moments.
+                  <button class="btn1">Read more..</button>
+                </p>
+            </div>
+            <div class="down1">
+                <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpjj0uFVWmP4rtTOUt4phhNR2s23m2TOVwg&s" alt=""> -->
+                <h3>How it started</h3>
+                <p>
+                    I first encountered web development during my college days. Like many beginners, I started with basic HTML and CSS. Initially, it felt overwhelming—there were so many tags, properties, and concepts to grasp. But as I practiced, I began to see the magic of transforming plain text into beautiful, interactive pages.
+                    The first webpage I built was simple: a static page introducing myself, with a header, some paragraphs, and an image. It wasn’t fancy, but it was mine, and it fueled my determination to dive deeper.
+                </p>
+          <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ_7mO_n26Dbrj5JNHGlg-9YsV5KJ7C12tOQ&s" alt=""> -->
+          <p>
+              <h3>Exploring the Front-end Development</h3>
+              My next step was mastering front-end development. I learned about:
+              CSS: Creating visually appealing designs and layouts.
+              JavaScript: Adding interactivity to web pages, like buttons that respond to clicks.
+              Frameworks: Tools like Bootstrap and React, which made building websites faster and more efficient.
+              Building small projects like a personal portfolio, a to-do list app, and a weather app gave me hands-on experience. With each project, I gained confidence and improved my skills
+            </p>
+            <h3>Understanding Back-End Development</h3>
+          <p>
+            As my front-end skills grew, I became curious about how websites function behind the scenes. This curiosity led me to back-end development. I started learning:
+            Server-side programming: Using languages like Node.js.
+            Databases: Working with MySQL and MongoDB to store and manage data.
+            APIs: Fetching and sending data between servers and applications.
+            One of my favorite projects was building a blog platform where users could create accounts, write posts, and interact with others. It was my first full-stack application, and it taught me how front-end and back-end work together.
+            <h3>The Joy of Building Projects</h3>
+            One of the most rewarding aspects of web development is seeing your ideas come to life. Whether it’s a small interactive feature or a complete website, the sense of accomplishment is unparalleled. I’ve enjoyed creating:
+            A portfolio showcasing my work.
+            A responsive e-commerce site with a cart and payment system.
+            A dynamic blog with user authentication and database integration.
+            <strong>Challenges I Faced</strong>
+            Learning web development hasn’t been a smooth ride. I’ve faced challenges like:
+            Debugging errors that seemed impossible to fix.
+            Understanding complex concepts like asynchronous programming.
+            Staying updated with rapidly evolving technologies.
+            However, each challenge taught me patience, problem-solving, and the importance of consistent learning.
+            <h3>Conclusion</h3>
+            <p>My first interview in the corporate world wasn’t just a test of my knowledge; it was an experience that pushed me out of my comfort zone and prepared me for the challenges ahead. It marked the beginning of a journey filled with learning, growth, and endless possibilities. For anyone preparing for their first interview, my advice is simple: believe in yourself, stay prepared, and embrace the experience wholeheartedly.</p>
+          </p>
+            </div>
+        </div>
+        <!-- <div class="category-card" id="card-3">
+            <div class="G1">
+                <h3 class="g1a">The Hackathon Begins</h3>
+                <p class="g1c">
+                    The Decision to Participate
+                    I came across the hackathon announcement through a friend. At first, I hesitated to join because I wasn’t sure if I was skilled enough. I had some programming knowledge and a few ideas, but the thought of competing with experienced coders felt daunting. However, the desire to learn and challenge myself overpowered my doubts. I formed a team with a few friends, and we registered for the event.
+                    The day of the hackathon was electrifying. The venue was buzzing with energy as participants set up their laptops and discussed ideas. The theme of the hackathon was announced: “Innovating for Sustainability.” We had 24 hours to brainstorm, build, and present a project.
+                  <button class="btn2">Read more..</button>
+            </div>
+        </div> -->
+      </div>
     </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+        </div>
+      </footer>
     <script src="blogs.js"></script>
-</body>
+  </body>
 </html>
-
-
-

@@ -76,7 +76,10 @@ document.querySelector("#login").addEventListener("click", () => {
   window.location.href = "./login/login.html";
 });
 //  open add page of the website.
-document.querySelector("#add").addEventListener("click", () => {
+document.getElementById("add").addEventListener("click", () => {
+  window.location.href = "./Add/add.html";
+});
+document.getElementById("addTask").addEventListener("click", () => {
   window.location.href = "./Add/add.html";
 });
 

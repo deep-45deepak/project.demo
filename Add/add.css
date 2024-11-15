@@ -1,3 +1,5 @@
+
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -5,13 +7,47 @@
     box-sizing: border-box;
 }
 
-/* Body Styling */
+@media only screen and (min-width: 400px) {
+
+    /* Body Styling */
 body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #e5e5e5; /* Light grey background like WhatsApp */
     padding: 20px;
+}
+
+.img{
+    margin: 2em;
+    height: auto;
+    width: 65%;
+}
+
+.form-container{
+    width: 35%;
+}
+
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    /* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e5e5e5; /* Light grey background like WhatsApp */
+    /* padding: 20px; */
+}
+
+.form-container {
+    padding: 2em;
+}
+
 }
 
 
@@ -22,7 +58,6 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 450px;
-    margin: 30px auto;
 }
 
 /* Form Title */
@@ -110,16 +145,4 @@ button:hover {
     font-size: 16px;
     color: #666;
     line-height: 1.6;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .form-container {
-        width: 100%;
-        padding: 15px;
-    }
-
-    button {
-        padding: 15px;
-    }
 }
