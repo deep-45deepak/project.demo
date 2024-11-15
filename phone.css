@@ -15,7 +15,6 @@
   #break {
     height: 1em;
     border: 1px solid darkgreen;
-    margin: 0.25em;
   }
   .logo img {
     height: 2.5em;
@@ -44,6 +43,7 @@
     width: auto;
     padding: 0em 0.5em 0em 0.6em;
     border-radius: 1em;
+    margin: 0.5em;
   }
   .Search > input {
     width: 6em;
