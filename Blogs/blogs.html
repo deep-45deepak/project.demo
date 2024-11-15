@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="website icon" type="png" href="/Images/.blog.png" />
-    <title>Add Blog</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="blogs.css" />
+    <link rel="website icon" type="png" href="../Images/.blog.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -36,7 +37,7 @@
             ></i>
           </button>
         </div>
-        <button id="add" class="start-writing-btn">Start Writing</button>
+        <button id="addBlog" class="start-writing-btn">Start Writing</button>
       </div>
     </nav>
     <!-- main part starts fromm here. -->
@@ -94,6 +95,17 @@
             <p>My first interview in the corporate world wasn’t just a test of my knowledge; it was an experience that pushed me out of my comfort zone and prepared me for the challenges ahead. It marked the beginning of a journey filled with learning, growth, and endless possibilities. For anyone preparing for their first interview, my advice is simple: believe in yourself, stay prepared, and embrace the experience wholeheartedly.</p>
           </p>
             </div>
+            <div class="panel">
+              <div class="actions">
+                <button class="button" id="likeButton">❤️ Like (<span id="likeCount">0</span>)</button>
+                <button class="button" id="commentButton">💬 Comment</button>
+              </div>
+              <div class="comments-section">
+                <input type="text" id="commentInput" placeholder="Add a comment..." />
+                <button class="button" id="addCommentButton">Post</button>
+                <ul id="commentsList"></ul>
+              </div>
+            </div>
         </div>
         <div class="category-card" id="card-2">
             <div class="G1">
@@ -142,6 +154,17 @@
             <p>My first interview in the corporate world wasn’t just a test of my knowledge; it was an experience that pushed me out of my comfort zone and prepared me for the challenges ahead. It marked the beginning of a journey filled with learning, growth, and endless possibilities. For anyone preparing for their first interview, my advice is simple: believe in yourself, stay prepared, and embrace the experience wholeheartedly.</p>
           </p>
             </div>
+            <div class="panel">
+              <div class="actions">
+                <button class="button" id="likeButton">❤️ Like (<span id="likeCount">0</span>)</button>
+                <button class="button" id="commentButton">💬 Comment</button>
+              </div>
+              <div class="comments-section">
+                <input type="text" id="commentInput" placeholder="Add a comment..." />
+                <button class="button" id="addCommentButton">Post</button>
+                <ul id="commentsList"></ul>
+              </div>
+            </div>
         </div>
         <!-- <div class="category-card" id="card-3">
             <div class="G1">
@@ -163,11 +186,11 @@
           </div>
           <div class="footer-section">
             <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+            <div class="info">
+              <a href="#">Home</a>
+              <a href="#">Services</a>
+              <a href="#">Contact</a>
+              <a href="#">Privacy Policy</a>
             </ul>
           </div>
           <div class="footer-section">

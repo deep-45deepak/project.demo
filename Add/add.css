@@ -13,41 +13,19 @@
 body {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #e5e5e5; /* Light grey background like WhatsApp */
     padding: 20px;
 }
 
 .img{
-    margin: 2em;
-    height: auto;
     width: 65%;
+    margin: 2em;
+    position: relative;
 }
-
-.form-container{
-    width: 35%;
-}
-
-
-}
-
-
-@media only screen and (max-width: 400px) {
-
-    /* Body Styling */
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e5e5e5; /* Light grey background like WhatsApp */
-    /* padding: 20px; */
-}
-
-.form-container {
-    padding: 2em;
-}
-
+.img>img{
+    width: 100%;
 }
 
 
@@ -57,7 +35,7 @@ body {
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 450px;
+    width: 45%;
 }
 
 /* Form Title */
@@ -116,7 +94,10 @@ button:hover {
 
 /* Blog Content Section */
 #mainContent {
+    position: absolute;
     margin-top: 40px;
+    top: 40em;
+    left: 10em;
 }
 
 /* Blog Post Styling */
@@ -145,4 +126,96 @@ button:hover {
     font-size: 16px;
     color: #666;
     line-height: 1.6;
+}
+
+
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    /* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: mintcream; /* Light grey background like WhatsApp */
+    /* padding: 20px; */
+}
+
+.img{
+    width: 95%;
+    height: auto;
+    text-align: center;
+}
+.img > img{
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+}
+
+/* Container for the form */
+.form-container {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 95%;
+}
+/* Form Title */
+h2 {
+    text-align: center;
+    color: #4a4a4a; /* Soft grey for text */
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #128c7e; /* Darker grey for labels */
+}
+
+/* Input Field Styling */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f5f5f5; /* Soft grey input fields */
+    color: black;
+}
+/* Image Input Styling */
+input[type="file"] {
+    margin-bottom: 20px;
+    background-color: #f5f5f5; /* Grey background for file input */
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Submit Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #25d366; /* WhatsApp green color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #128c7e; /* Darker green on hover */
+}
+
+
 }

@@ -13,8 +13,9 @@
     width: 100%;
   }
   #break {
-    height: 1.5em;
+    height: 1em;
     border: 1px solid darkgreen;
+    margin: 0.25em;
   }
   .logo img {
     height: 2.5em;
@@ -100,11 +101,12 @@
         padding: 0.85em;
         float: right;
         position: sticky;
-        top: 5em;
+        top: 15em;
         right: 0.5em;
         border-radius: 2em;
         font-size: x-small;
         display: none;
+        font-family: 'Courier New', Courier, monospace;
       }
       #profile {
         height: 2em;
