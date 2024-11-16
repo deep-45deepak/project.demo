@@ -113,6 +113,7 @@ body {
   grid-template-columns: 1.3fr 1.5fr;
   grid-template-rows: 1fr 0.7fr;
   height: auto;
+  font-size: large;
   width: 100%;
 }
 
@@ -218,7 +219,8 @@ ul li {
 
   .logo {
     height: 2em;
-    margin-right: 1em;
+    margin-right: 0.5em;
+    margin-left: 0.4em;
   }
 
   .nav-btn {
@@ -293,13 +295,14 @@ ul li {
   border: 1px solid #ddd;
   border-radius: 10px;
   width: 100%;
+  height: fit-content;
 }
 .G1 {
   /* padding: 5em; */
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   grid-template-rows: 1fr 0.7fr;
-  height: auto;
+  height: 50%;
   width: 100%;
 }
 
@@ -328,6 +331,7 @@ ul li {
   align-items: center;
   justify-content: center;
   padding: 2em;
+  height:fit-content;
 }
 .btn,.btn1,.btn2{
     background-color: transparent;
@@ -357,7 +361,7 @@ ul li {
   margin: 1em;
 }
 
-button:hover {
+.button:hover {
   background-color: #0056b3;
 }
 

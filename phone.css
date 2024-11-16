@@ -20,7 +20,7 @@
     height: 2.5em;
     width: 5em;
     border-radius: 1em;
-    margin: 0.2em 1em 0em 1em;
+    margin: 0.2em 0.5em 0em 0.5em;
   }
   .left {
     display: flex;

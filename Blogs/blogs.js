@@ -25,7 +25,7 @@ const readMore1 = document.querySelector(".btn1").addEventListener("click", (e)=
 
 
 
-// Retrieve data from localStorage
+// Retrieve data from localStorage for 1st post
 
 
 let likeCount = parseInt(localStorage.getItem('likeCount')) || 0;
