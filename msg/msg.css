@@ -106,7 +106,8 @@ body {
     width: 100%;
     background-color: white;
     height: 3em;
-  }
+    border-radius: 1em;
+}
   .nav > video {
     width: 3em;
     height: 3em;
@@ -137,6 +138,7 @@ body {
     height: 3em;
     position: sticky;
     top: -1em;
+    border-radius: 1em;
   }
   .nav > video {
     width: 3em;
@@ -146,19 +148,23 @@ body {
   }
   .inbox-container {
     overflow: scroll;
-    height: 70vh;
+    height: 60vh;
   }
   .msg {
+    padding: 1em 1em 2.5em 1em;
     position: static;
-    bottom: 0em;
+    bottom: 10em;
     background-color: white;
     width: 100%;
     text-align: center;
-    height: 30vh;
+    height: 45vh;
     border: 0.5px solid gray;
   }
   .message-input {
     background-color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 15%;
   }
   #messageInput {
     padding: 0.5em 0.5em 0.5em 1em;

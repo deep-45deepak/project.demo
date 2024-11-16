@@ -142,18 +142,17 @@
     </div>
     <div class="msg">
       <div class="head">
+        <h3>Messages</h3>
       </div>
-      <div class="msg"></div>
-      <!-- Input and Button for typing new messages -->
-      <div class="message-input">
-        <input
-          type="text"
-          id="messageInput"
-          placeholder="Type your message..."
-        />
-        <button id="sendButton">Send</button>
+      <div class="messages" style="overflow-y: auto; max-height: 400px;">
+        <!-- Messages will be appended here -->
       </div>
     </div>
+    <div class="message-input">
+      <input type="text" id="messageInput" placeholder="Type your message..." />
+      <button id="sendButton">Send</button>
+    </div>
+    
 
     <!-- JavaScript file -->
     <script src="msg.js"></script>
