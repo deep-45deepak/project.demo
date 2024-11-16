@@ -11,6 +11,8 @@ darkModeBtn.addEventListener("click", (e) => {
   const image = document.querySelector("#themeImage");
 
   if (nav.style.backgroundColor !== "black") {
+    // Set src for dark mode
+    image.src = "./Images/darkLogo.jpg";
     // Apply dark theme
     nav.style.backgroundColor = "black";
     nav.style.color = "white";
@@ -23,8 +25,6 @@ darkModeBtn.addEventListener("click", (e) => {
     controlPanel.style.backgroundColor = "black";
     controlPanel.style.color = "white";
 
-    // Set src for dark mode
-    image.src = "./Images/darkLogo.jpg";
 
     // Style all right side buttons in dark mode
     rightButtons.forEach((button) => {
@@ -32,6 +32,8 @@ darkModeBtn.addEventListener("click", (e) => {
       button.style.color = "white";
     });
   } else {
+    // Set src for light mode
+    image.src = "./Images/logo.png";
     // Revert to light theme
     nav.style.backgroundColor = "mintcream";
     nav.style.color = "black";
@@ -43,9 +45,6 @@ darkModeBtn.addEventListener("click", (e) => {
     searchBtnI.style.color = "black";
     controlPanel.style.backgroundColor = "white";
     controlPanel.style.color = "black";
-
-    // Set src for light mode
-    image.src = "./Images/logo.png";
 
     // Revert buttons to light theme
     rightButtons.forEach((button) => {
