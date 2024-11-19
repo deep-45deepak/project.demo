@@ -322,7 +322,7 @@ ul li {
   grid-row-end: 1;
   border-radius: 1em;
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 .g1c {
   grid-column-start: 1;
@@ -490,3 +490,5 @@ ul li {
 .footer-bottom p {
   margin: 0;
 }
+
+
