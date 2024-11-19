@@ -73,6 +73,9 @@ document.querySelector("#blogs").addEventListener("click", () => {
 document.querySelector("#blogsTask").addEventListener("click", () => {
   window.location.href = "./blogs/blogs.html";
 });
+document.querySelector("#blogsSec").addEventListener("click", () => {
+  window.location.href = "./blogs/blogs.html";
+});
 //  open login page of the website.
 document.querySelector("#login").addEventListener("click", () => {
   window.location.href = "./login/login.html";

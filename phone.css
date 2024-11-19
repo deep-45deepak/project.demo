@@ -106,7 +106,7 @@
         border-radius: 2em;
         font-size: x-small;
         display: none;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: Arial, Helvetica, sans-serif;
       }
       #profile {
         height: 2em;
@@ -231,7 +231,7 @@
     width: auto;
     text-align: center;
   }
-  #SecBtn {
+  .SecBtn {
     border: none;
     font-size: 1em;
     padding: 0.4em 0.5em;
