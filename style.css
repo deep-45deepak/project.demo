@@ -257,7 +257,7 @@ body {
     text-align: center;
   }
   .first img {
-    width: auto;
+    width: 75%;
   }
   .text {
     display: flex;
