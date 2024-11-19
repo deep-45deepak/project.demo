@@ -97,6 +97,10 @@ body {
 
 /* Responsive Design */
 @media (min-width: 768px) {
+  .body{
+    scroll-behavior: smooth;
+    height: 70vh;
+  }
   .nav {
     display: flex;
     justify-content: center;
@@ -115,10 +119,39 @@ body {
     margin: 1em;
   }
   .inbox-container {
-    overflow: scroll;
+    overflow: hidden;
     scrollbar-width: 0em;
     scroll-snap-type: none;
-    width: 60%;
+    width: 70%;
+  }
+  .msg{
+    overflow: hidden;
+    scrollbar-width: 0px;
+    background-color: white;
+    text-align: center;
+    width: 50%;
+    height:100vw;
+    border-radius: 2em;
+    margin: 3em 2em;
+    padding: 2em;
+}
+  .message-input {
+    position: absolute;
+    bottom: -2em;
+    right: 5%;
+  }
+  #messageInput {
+    padding: 1em 4em 1em 2em;
+    margin: 0.2em;
+    border-radius: 2em;
+    border: 1px solid green;
+  }
+  #sendButton {
+    padding: 0.7em 2em;
+    margin: 4em;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 1em;
   }
 }
 
@@ -151,18 +184,23 @@ body {
     height: 60vh;
   }
   .msg {
-    padding: 1em 1em 2.5em 1em;
+    overflow: hidden;
+    padding: 1em;
     position: static;
-    bottom: 10em;
+    bottom: -2em;
     background-color: white;
     width: 100%;
     text-align: center;
-    height: 45vh;
+    height: 55vh;
     border: 0.5px solid gray;
-  }
+    border-radius: 1.2em;
+}
   .message-input {
-    background-color: white;
+    width: fit-content;
+    background-color: inherit;
     position: absolute;
+    position: sticky;
+    margin-left: 15%;
     bottom: 0px;
     left: 15%;
   }
