@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const msgBox = document.querySelector('.msg'); // Main message container
     const messageInput = document.getElementById('messageInput');
     const sendButton = document.getElementById('sendButton');
-    
+
     // Dynamically apply styles to make .msg scrollable
-    msgBox.style.maxHeight = '500px'; // Set the max height for the .msg container
+    msgBox.style.maxHeight = '550px'; // Set the max height for the .msg container
     msgBox.style.overflowY = 'auto';  // Enable vertical scrolling
-  
+
     /**
      * Append a message to the message list inside the .msg class.
      * @param {string|null} subject - The subject of the message.
@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const blueTick = isUser
         ? `<span class="blue-tick">✓✓</span>` // Blue tick for user messages
         : '';
-  
+
       const messagesContainer = msgBox.querySelector('.messages'); // Container for messages
       messagesContainer.insertAdjacentHTML(
         'beforeend',
         `
           <div class="message-content ${messageClass}">
-            ${subject ? `<h3>${subject}</h3>` : ''}
+            ${subject ? `<h4>${subject}</h4>` : ''}
             <p>${content}</p>
             <div style="margin:0.4em" class="timestamp">
               ${time}
@@ -35,22 +35,19 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         `
       );
-  
-      // Scroll to the latest message
-      messagesContainer.scrollTop = messagesContainer.scrollHeight;
     }
-  
+
     // Handle tapping on mail items
     mailItems.forEach(item => {
       item.addEventListener('click', () => {
         const subject = item.querySelector('h3').innerText;
         const content = item.querySelector('p').innerText;
         const time = item.querySelector('p:last-child').innerText;
-  
+
         appendMessage(subject, content, time);
       });
     });
-  
+
     // Handle sending a typed message
     function sendMessage() {
       const messageText = messageInput.value.trim();
@@ -76,4 +73,5 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+  
   
