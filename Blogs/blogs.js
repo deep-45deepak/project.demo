@@ -24,61 +24,54 @@ const readMore1 = document.querySelector(".btn1").addEventListener("click", (e)=
 });
 
 
+ // Retrieve data from localStorage for posts.
 
-// Retrieve data from localStorage for 1st post
 
+document.addEventListener("DOMContentLoaded", () => {
+  // Handle Like Button and Comments dynamically for all posts
+  const posts = document.querySelectorAll(".category-card");
 
-let likeCount = parseInt(localStorage.getItem('likeCount')) || 0;
-let comments = JSON.parse(localStorage.getItem('comments')) || [];
+  posts.forEach((post, index) => {
+    // Unique keys for localStorage
+    const postId = `post-${index + 1}`;
+    const likeKey = `${postId}-likes`;
+    const commentsKey = `${postId}-comments`;
 
-// Update like count and comments on page load
-document.getElementById('likeCount').textContent = likeCount;
-updateCommentsList(comments);
+    // DOM elements
+    const likeButton = post.querySelector(".actions #likeButton");
+    const likeCountSpan = likeButton.querySelector("span");
+    const commentButton = post.querySelector(".actions #commentButton");
+    const commentInput = post.querySelector(".comments-section #commentInput");
+    const addCommentButton = post.querySelector(".comments-section #addCommentButton");
+    const commentsList = post.querySelector(".comments-section #commentsList");
 
-// Like button functionality
-document.getElementById('likeButton').addEventListener('click', () => {
-  likeCount++;
-  document.getElementById('likeCount').textContent = likeCount;
-  localStorage.setItem('likeCount', likeCount); // Store in localStorage
-});
+    // Initialize likes and comments from localStorage
+    let likeCount = parseInt(localStorage.getItem(likeKey)) || 0;
+    let comments = JSON.parse(localStorage.getItem(commentsKey)) || [];
 
-// Add comment functionality
-document.getElementById('addCommentButton').addEventListener('click', () => {
-  const commentInput = document.getElementById('commentInput');
-  const commentText = commentInput.value.trim();
+    // Update UI
+    likeCountSpan.textContent = likeCount;
+    commentsList.innerHTML = comments.map(comment => `<li>${comment}</li>`).join("");
 
-  if (commentText) {
-    comments.push(commentText);
-    localStorage.setItem('comments', JSON.stringify(comments)); // Store comments in localStorage
+    // Like Button Click
+    likeButton.addEventListener("click", () => {
+      likeCount++;
+      localStorage.setItem(likeKey, likeCount);
+      likeCountSpan.textContent = likeCount;
+    });
 
-    updateCommentsList(comments); // Update comments display
-    commentInput.value = ''; // Clear the input
-  }
-});
-
-// Function to update the comments list
-function updateCommentsList(commentsArray) {
-  const commentsList = document.getElementById('commentsList');
-  commentsList.innerHTML = ''; // Clear existing comments
-
-  commentsArray.forEach((comment, index) => {
-    const commentItem = document.createElement('li');
-    commentItem.textContent = comment;
-
-    // Add a delete button
-    const deleteButton = document.createElement('button');
-    deleteButton.textContent = '❌';
-    deleteButton.classList.add('delete-btn');
-    deleteButton.addEventListener('click', () => deleteComment(index)); // Attach delete event
-
-    commentItem.appendChild(deleteButton);
-    commentsList.appendChild(commentItem);
+    // Add Comment Button Click
+    addCommentButton.addEventListener("click", () => {
+      const commentText = commentInput.value.trim();
+      if (commentText) {
+        comments.push(commentText);
+        localStorage.setItem(commentsKey, JSON.stringify(comments));
+        commentsList.innerHTML += `<li>${commentText}</li>`;
+        commentInput.value = ""; // Clear input
+      }
+    });
   });
-}
+});
 
-// Function to delete a comment
-function deleteComment(index) {
-  comments.splice(index, 1); // Remove the comment at the given index
-  localStorage.setItem('comments', JSON.stringify(comments)); // Update localStorage
-  updateCommentsList(comments); // Refresh comments display
-}
+
+
