@@ -207,6 +207,7 @@ ul li {
 
   .navbar {
     display: flex;
+    text-align: center;
     height: 3em;
     width: 100%;
     background: linear-gradient(135deg, #74ebd5, #acb6e5);
@@ -235,6 +236,7 @@ ul li {
   }
   
   .search-container {
+    margin: 0em 3em;
     display: flex;
     align-items: center;
     /* width: 4em; */
