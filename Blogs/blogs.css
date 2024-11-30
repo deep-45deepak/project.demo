@@ -6,8 +6,9 @@ body {
 }
 
 @media only screen and (min-width: 400px) {
-
-.navbar {
+  
+  .navbar {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +16,6 @@ body {
   color: white;
   padding: 0em 10em;
   height: 3em;
-  border-radius: 2em;
 }
 .navbar-left {
   display: flex;
@@ -87,9 +87,9 @@ body {
 
 .container {
   background-color: mintcream;
-  border-radius: 2em;
-  margin: 1em;
   border: 0.2px solid #04aa6d;
+  border-top:none;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
 }
 
 .category-container {
@@ -209,6 +209,7 @@ ul li {
     display: flex;
     height: 3em;
     width: 100%;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
   }
 
   .navbar-left{
@@ -276,9 +277,10 @@ ul li {
 
 .container {
   background-color: mintcream;
-  border-radius: 2em;
+  /* border-radius: 2em; */
   font-size: small;
   width: 100%;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
 }
 
 .category-container {

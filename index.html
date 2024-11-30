@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,9 +23,6 @@
     <link rel="stylesheet" href="phone.css" />
   </head>
   <body>
-
-
-
     <!-- Navbar starts here -->
     <nav>
       <div class="navbar">
@@ -36,7 +32,12 @@
           </div>
           <div id="break"></div>
           <div class="heading">
-            <button style="background-color: #04aa6d; color:white" class="rBtn">Home</button>
+            <button
+              style="background-color: #04aa6d; color: white"
+              class="rBtn"
+            >
+              Home
+            </button>
             <button id="blogs" class="rBtn">
               Blogs
               <i
@@ -84,16 +85,29 @@
       </div>
     </nav>
 
-
     <!-- Control Panel (Sidebar) -->
     <div class="ControlPanel" id="controlPanel">
       <div class="content">
         <div onclick="closeControlPanel()" class="menu">
-          <i onclick="closeControlPanel()" style="color: white" class="fa-duotone fa-solid fa-arrow-right-from-bracket"></i>
-          <button style="border: none" type="button" onclick="closeControlPanel()">Close</button>
+          <i
+            onclick="closeControlPanel()"
+            style="color: white"
+            class="fa-duotone fa-solid fa-arrow-right-from-bracket"
+          ></i>
+          <button
+            style="border: none"
+            type="button"
+            onclick="closeControlPanel()"
+          >
+            Close
+          </button>
         </div>
         <h3>Profile</h3>
-        <img id="profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIf4R5qPKHPNMyAqV-FjS_OTBB8pfUV29Phg&s" alt="Profile Picture" />
+        <img
+          id="profile"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIf4R5qPKHPNMyAqV-FjS_OTBB8pfUV29Phg&s"
+          alt="Profile Picture"
+        />
       </div>
       <div class="Shortcut">
         <h3>Shortcuts</h3>
@@ -119,9 +133,6 @@
         </div>
       </div>
     </div>
-
-
-
 
     <!-- Main section starts here -->
     <main class="main">
@@ -160,7 +171,9 @@
       <!-- Second section starts from here.. -->
       <div class="second">
         <div class="secondTop">
-          <h1 id="typing-heading" style="font-size: medium;">A beautiful website starts here</h1>
+          <h1 id="typing-heading" style="font-size: medium">
+            A beautiful website starts here
+          </h1>
           <h3>
             Weebly's powerful drag and drop website builder and guided set up
             get you to the finish line faster, no coding needed.
@@ -171,7 +184,67 @@
           <a href="#">HEALTH BLOGS</a>
           <a href="#">EVENT BLOGS</a>
           <a href="#">FOOD BLOGS</a>
-          <div class="grid">
+        </div>
+
+        <div class="secAnimation">
+          <div class="carousel-container">
+            <div class="carousel-track">
+              <div class="fbox">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOyj0X6r1LTNkwS_Y-JH5gJNPwJ7eUPBVW3A&s"
+                  alt="Sample 1"
+                />
+              </div>
+              <div class="fbox">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOycmVbRZVZCQ4c4KcR5aFcWr6JNrz6rF9DQ&s"
+                  alt="Sample 2"
+                />
+              </div>
+              <div class="fbox">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVU0qtDhH6-4pdrgzugEJcv50oe90Mb7-Q1Q&s"
+                  alt="Sample 3"
+                />
+              </div>
+              <div class="fbox">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ei_kx3VvFRaAobJI7sStOGYZT690V4qN_w&s"
+                  alt="Sample 4"
+                />
+              </div>
+              <div class="fbox">
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Sample 5"
+                />
+              </div>
+              <div class="fbox">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYeWAXeBgRDe18itcSO-6DEzW9vgVeAMjEoA&s"
+                  alt="Sample 6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="secondEnd">
+          <button class="SecBtn" id="blogsSec">See More</button>
+        </div>
+      </div>
+
+      <!-- third section starts from here. -->
+      <div class="third">
+        <div class="thirdContent">
+          <h1>How to Add a Blog on Website</h1>
+          <p>
+            Content is king—add a blog to your website and learn exactly how
+            SEO‑centric content can drive real results for your business.
+          </p>
+        </div>
+      </div>
+                <div class="grid">
             <div class="box1 box">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKbQ0E8l6BAbTjsShpOCjRUqkGR4ga24Pgn-BP-0Dn9k2EvzrzbOOIzkuwjrvYjYTmS3s&usqp=CAU"
@@ -209,29 +282,8 @@
               />
             </div>
           </div>
-        </div>
-        <div class="secondEnd">
-          <button class="SecBtn" id="blogsSec">See More</button>
-        </div>
-      </div>
-      <!-- third section starts from here. -->
-      <div class="third">
-        <div class="thirdContent">
-          <h1>How to Add a Blog on Website</h1>
-          <p>
-            Content is king—add a blog to your website and learn exactly how
-            SEO‑centric content can drive real results for your business.
-          </p>
-        </div>
-        <img
-          src="https://prod.ucwe.capgemini.com/be-en/wp-content/uploads/sites/14/2023/07/Sustainable-Solutions-blog-picture.jpg?w=960"
-          alt="image"
-        />
-      </div>
-      <div class="forth">
-        <div class="forthImg">
-          <img style="max-width: 100vw" src="" alt="" />
-        </div>
+          <div class="forth">
+          <img style="max-width: 80vw"  src="https://prod.ucwe.capgemini.com/be-en/wp-content/uploads/sites/14/2023/07/Sustainable-Solutions-blog-picture.jpg?w=960" alt="" />
       </div>
     </main>
 
@@ -277,7 +329,7 @@
         </div>
         <div class="line"></div>
       </div>
-      <p style="padding:1em;display: inline-block;font-size:small;">
+      <p style="padding: 1em; display: inline-block; font-size: small">
         Website Terms | Privacy Policy | Accessibility Statement | CA
         Transparency in supply chains Act | Supplier Code of Conduct | Marketing
         to Children | Do not Sell my Information

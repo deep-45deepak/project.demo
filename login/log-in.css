@@ -13,9 +13,11 @@ body {
   width: 100vw;
   background-color: mintcream;
   font-family: "Lora", serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
 }
 
 .container {
+  background: linear-gradient(135deg, #ffffff, #acb6e5);
   display: flex;
   width: 80vw;
   height: 75vh;
@@ -42,7 +44,7 @@ body {
 }
 
 .social-icons img {
-  margin: 0.5em;
+  margin: 0.3em;
   height: 30px;
   width: 30px;
 }
